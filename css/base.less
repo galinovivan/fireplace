@@ -1,0 +1,262 @@
+@import "varibles";
+@import "mixin";
+
+@font-face {
+  font-family: futuredemic;
+  src: url('../fonts/FUTURADEMIC.OTF');
+}
+@font-face {
+  font-family: future_book;
+  src: url('../fonts/FUTURABOOKC.OTF');
+}
+
+@font-face {
+  font-family: muller_ultra_light;
+  src: url('../fonts/Muller-UltraLight.otf');
+}
+
+html {
+  height: 100%;
+  min-height: 100%;
+}
+body {
+  font-family: @baseFont;
+  font-size: @baseFontSize;
+  color: @black;
+  position: relative;
+  min-height: 100%;
+}
+h1,
+h2,
+h3 {
+  font-family: @mediumFont;
+}
+h1 {
+  font-size: @h1_size;
+}
+h2 {
+  font-size: @h2_size;
+}
+ul {
+  list-style: none;
+  .padding_margin_clear();
+}
+h3 {
+  font-size: @h3_size;
+}
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+.align_center {
+  .align();
+}
+.align_left {
+  .align(left);
+}
+.align_right {
+  .align(right);
+}
+a {
+  color: @black;
+  font-size: @baseFontSize - 1;
+}
+a:active,
+a:visited,
+a:focus {
+  outline: none;
+}
+button {
+  .btn_style();
+  display: block;
+  &:hover {
+    text-decoration: none !important;
+    color: @white !important;
+  }
+  &:visited,
+  &:focus {
+    color: @white !important;
+    text-decoration: none !important;
+  }
+}
+.inline {
+  display: inline-block;
+}
+.up {
+  text-transform: uppercase;
+}
+.modal {
+  .modal-header {
+    .margin_align();
+    border: none;
+    position: relative;
+    .modal-title {
+      .align();
+
+    }
+    .close {
+      width: auto;
+      position: absolute;
+      right: 50px;
+      top: 0;
+      opacity: .6;
+      &:hover {
+        background: none;
+        opacity: 1;
+      }
+    }
+  }
+  .modal-content {
+    padding: 45px 0;
+    margin: auto;
+    .radius(0);
+  }
+  form {
+    .form_style();
+    .light_form();
+  }
+}
+.background_gray {
+  background: @backgroundGray;
+}
+.img_center {
+  .margin_align();
+}
+.text_gray {
+  color: @gray;
+}
+.clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+.list_inline {
+  list-style: none;
+  li {
+    display: inline-block;
+  }
+}
+.section_capt_center {
+  .row {
+    position: relative;
+  }
+  .align();
+}
+.section_capt {
+  .row {
+    position: relative;
+  }
+  margin-top: 45px;
+  margin-bottom: 40px;
+  .align(left);
+  h2 {
+    margin: 0;
+  }
+  .back_link {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    span {
+      font-size: @baseFontSize + 6;
+      color: @color-base;
+      margin-left: 15px;
+    }
+    img {
+      margin-top: 3px;
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .back_link {
+      right: auto;
+      left: 25px;
+      top: 1%;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    h2 {
+      font-size: @h2_size * 0.6;
+      margin-top: 5px;
+    }
+  }
+}
+.btn_base {
+  font-family: @mediumFont;
+  font-size: @baseFontSize - 3;
+  display: block;
+  height: 42px;
+  text-transform: uppercase;
+  .btn_style(80%, 12px);
+}
+.btn_transparent {
+  .btn_style(200px, 12px);
+  height: 45px;
+  background: transparent;
+  font-family: @mediumFont;
+  font-size: @baseFontSize + 2;
+  border: 2px solid @white;
+  color: @white;
+  .transition();
+  .btn_hover(@white, @color-base);
+}
+.grid_5 {
+  width: 20%;
+  float: left;
+  .box();
+}
+
+
+//media
+@media screen and (max-width: 1500px) {
+  body {
+    font-size: @baseFontSize * 0.9;
+  }
+  h3 {
+    font-size: @baseFontSize + 8;
+  }
+  .btn_base {
+    width: 100%;
+    font-size: @baseFontSize;
+  }
+}
+@media screen and (max-width: 991px) {
+  .mobile_all_width {
+    width: 100% !important;
+  }
+  .section_capt {
+    margin: 25px 0;
+    .align();
+  }
+}
+.pagination_container {
+  .pagination {
+    .pagination_style();
+    margin: 50px 0 0 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .pagination_container {
+    margin: 25px 0;
+    .align();
+    .arrow_left {
+      margin-left: 35px;
+    }
+    .arrow_right {
+      margin-right: 35px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .pagination_container {
+    .arrow_left {
+      margin-left: 10px;
+    }
+    .arrow_right {
+      margin-right: 10px;
+    }
+  }
+}
+
+

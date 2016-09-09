@@ -1,0 +1,31 @@
+/*sprite adventage*/
+.sprite-adventage {
+    background-image: url('../img/sprite-adventage.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-camin {
+    width: 84px;
+    height: 84px;
+    background-position: -5px -5px;
+}
+
+.sprite-fire {
+    width: 81px;
+    height: 81px;
+    background-position: -99px -5px;
+}
+
+.sprite-smoke {
+    width: 75px;
+    height: 81px;
+    background-position: -190px -5px;
+}
+
+.sprite-zippo {
+    width: 70px;
+    height: 87px;
+    background-position: -99px -96px;
+}
+/* //sprite adventage*/

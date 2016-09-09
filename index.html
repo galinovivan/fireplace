@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sprite.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+</head>
+<body>
+<!--modal-->
+<div class="modal fade" id="callBackModal">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-hidden="true" class="close"><img
+                        src="img/modal_close.png" alt="close"></button>
+                <h2 class="up modal-title">Оставить заявку</h2>
+
+            </div>
+            <div class="modal-body">
+                <form method="post" id="callBackForm">
+                    <input type="text" name="name" placeholder="Как вас зовут?" required>
+                    <input type="text" name="user_contact" placeholder="Почта или телефон" required>
+                                        <textarea name="messages" id="" cols="30" rows="7"
+                                                  placeholder="А вот тут то мы и напишем!"></textarea>
+                    <input type="submit" name="done" value="ОТПРАВИТЬ">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modal-->
+<header>
+<div class="page_header hidden-xs hidden-sm">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 top_logo background_white clearfix">
+                <div class="media">
+                    <a class="media-left" href="index.html">
+                        <img src="img/header_logo.png" alt="logo" class="media-object img-responsive">
+                    </a>
+                    <div class="media-body">
+                        <h2 class="media-heading">
+                            Каминпечь
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-5 top_nav">
+                <ul class="list_inline">
+                    <li><a href="catalog.html" class="up">Септики</a></li>
+                    <li><a href="services.html" class="up">Услуги</a></li>
+                    <li><a href="gallery.html" class="up">Галерея</a></li>
+                    <li><a href="about.html" class="up">О компании</a></li>
+                    <li><a href="news.html" class="up">Новости</a></li>
+                    <li><a href="contact.html" class="up">Контакты</a></li>
+                </ul>
+            </div>
+
+           <div class="col-md-3 col-md-offset-1">
+               <div class="row">
+                   <div class="col-md-6 top_contacts">
+                       <h3>+7(812)123-45-67</h3>
+                   </div>
+                   <div class="col-md-6 top_call">
+                    <a href="#callBackModal" data-toggle="modal" class="btn_base">Заявка</a>
+                   </div>
+               </div>
+           </div>
+        </div>
+    </div>
+</div>
+<!--header mobile-->
+    <div class="header_mobile visible-xs visible-sm">
+    <div class="container-fluid">
+        <div class="row clearfix">
+            <a id="navToggle" class="nav_mobile pull-left">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+
+            <div class="logo_mobile clearfix">
+                <!--<a href="index.html"><img src="img/logo_mobile.png" alt="logo" class="img-responsive"></a>-->
+                <!--<div class="media">-->
+                <!--<a href="index.html" class="media-left">-->
+                <!--<img src="img/logo_mobile.png" alt="logo" class="media-object">-->
+                <!--</a>-->
+                <!--<div class="media-body">-->
+                <!--<h3 class="media-heading up">Гудсептик</h3>-->
+                <!--<span class="up text_gray">Все септики здесь!</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
+
+                <div class="brand pull-left">
+                    <a href="index.html"><img src="img/logo_mobile.png" alt="logo"></a>
+                </div>
+                <div class="brand_text pull-left">
+                    <h3 class="up">
+                        Гудсептик
+                    </h3>
+                    <span class="text_gray up">
+                        Все септики здесь!
+                    </span>
+                </div>
+            </div>
+            <div class="contact_mobile pull-right">
+                <a href="#callBackModal" data-toggle="modal"><i class="fa fa-pencil"></i> </a>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--end header-->
+    </header>
+<main class="main_page">
+        <div class="carousel_container">
+    <div class="carousel slide" id="mainCarousel" data-ride="carousel" data-interval="3000">
+        <ol class="carousel-indicators">
+            <li class="active" data-slide-to="0" data-target="#mainCarousel"></li>
+            <li data-slide-to="1" data-target="#mainCarousel"></li>
+            <li data-slide-to="2" data-target="#mainCarousel"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="carousel-caption">
+                <h1>
+                    Почувствуйте уют
+                </h1>
+                    <p>
+                        с нашими печами и каминами
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="carousel-caption">
+                    <h1>
+                        Почувствуйте уют
+                    </h1>
+                    <p>
+                        с нашими печами и каминами
+                    </p>
+                </div>
+            </div>
+            <div class="item">
+                <div class="carousel-caption">
+                    <h1>
+                        Почувствуйте уют
+                    </h1>
+                    <p>
+                        с нашими печами и каминами
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    <div class="adventage">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 adventage_item">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2>
+                                Печи
+                            </h2>
+                            <p class="text_gray">
+                                В ассортименте представлены высокопроизводительные
+                                и экономичные печи с дровами
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <i class="sprite-adventage sprite-camin"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 adventage_item">
+                    <i class="sprite-adventage sprite-fire"></i>
+                </div>
+                <div class="col-md-3 adventage_item">
+                    <i class="sprite-adventage sprite-zippo"></i>
+                </div>
+                <div class="col-md-3 adventage_item">
+                    <i class="sprite-adventage sprite-smoke"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+</body>
+</html>
