@@ -29,3 +29,42 @@
     background-position: -99px -96px;
 }
 /* //sprite adventage*/
+
+/*sprite social*/
+.sprite-social {
+    background-image: url('../img/social-sprite.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-social_fb {
+    width: 19px;
+    height: 16px;
+    background-position: -5px -5px;
+}
+
+.sprite-social_inst {
+    width: 14px;
+    height: 14px;
+    background-position: -34px -5px;
+}
+
+.sprite-social_odn {
+    width: 11px;
+    height: 19px;
+    background-position: -34px -29px;
+}
+
+.sprite-social_tw {
+    width: 18px;
+    height: 15px;
+    background-position: -58px -5px;
+}
+
+.sprite-social_vk {
+    width: 23px;
+    height: 13px;
+    background-position: -55px -30px;
+}
+
+/*sprite social*/
