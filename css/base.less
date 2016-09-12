@@ -228,11 +228,18 @@ button {
   .margin_align();
   .radius(75px);
   .btn_hover(@text_color_base, @white);
+  @media screen and (max-width: 991px) {
+    width: 60%;
+    min-width: 200px;
+  }
 }
 .grid_5 {
   width: 20%;
   float: left;
   .box();
+}
+.mobile_full_width {
+  padding: 0;
 }
 
 

@@ -68,3 +68,42 @@
 }
 
 /*sprite social*/
+
+/*social mobile */
+.sprite-social-mobile {
+    background-image: url('../img/sprite-social-mobile.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-social_mobile_fb {
+    width: 45px;
+    height: 35px;
+    background-position: -5px -5px;
+}
+
+.sprite-social_mobile_inst {
+    width: 45px;
+    height: 35px;
+    background-position: -60px -5px;
+}
+
+.sprite-social_mobile_odn {
+    width: 45px;
+    height: 35px;
+    background-position: -5px -50px;
+}
+
+.sprite-social_mobile_tw {
+    width: 45px;
+    height: 35px;
+    background-position: -60px -50px;
+}
+
+.sprite-social_mobile_vk {
+    width: 45px;
+    height: 35px;
+    background-position: -115px -5px;
+}
+
+/*social mobile*/
