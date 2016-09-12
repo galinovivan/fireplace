@@ -37,10 +37,10 @@
 </div>
 <!--end modal-->
 <header>
-<div class="page_header hidden-xs hidden-sm">
+<div class="page_header">
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-3 top_logo background_white clearfix">
+            <div class="col-md-2 col-lg-3 top_logo background_white clearfix hidden-xs hidden-sm">
                 <div class="media">
                     <a class="media-left" href="index.html">
                         <img src="img/header_logo.png" alt="logo" class="media-object img-responsive">
@@ -52,18 +52,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-5 top_nav">
-                <ul class="list_inline">
-                    <li><a href="catalog.html" class="up">Септики</a></li>
-                    <li><a href="services.html" class="up">Услуги</a></li>
-                    <li><a href="gallery.html" class="up">Галерея</a></li>
+            <div class="col-md-7 col-lg-5 top_nav col-xs-12 col-sm-12">
+                <ul class="list_inline" id="topNav">
                     <li><a href="about.html" class="up">О компании</a></li>
+                    <li><a href="catalog.html" class="up">Каталог</a></li>
                     <li><a href="news.html" class="up">Новости</a></li>
-                    <li><a href="contact.html" class="up">Контакты</a></li>
+                    <li><a href="reviews.html" class="up">Отзывы</a></li>
+                    <li><a href="gallery.html" class="up">Галерея</a></li>
+                    <li><a href="contacts.html" class="up">Контакты</a></li>
+                    <li class="visible-xs visible-sm" id="navClose"><i class="fa fa-close"></i></li>
                 </ul>
             </div>
 
-           <div class="col-md-3 col-md-offset-1">
+           <div class="col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-1 hidden-xs hidden-sm">
                <div class="row">
                    <div class="col-md-6 top_contacts">
                        <h3>+7(812)123-45-67</h3>
@@ -87,28 +88,15 @@
             </a>
 
             <div class="logo_mobile clearfix">
-                <!--<a href="index.html"><img src="img/logo_mobile.png" alt="logo" class="img-responsive"></a>-->
-                <!--<div class="media">-->
-                <!--<a href="index.html" class="media-left">-->
-                <!--<img src="img/logo_mobile.png" alt="logo" class="media-object">-->
-                <!--</a>-->
-                <!--<div class="media-body">-->
-                <!--<h3 class="media-heading up">Гудсептик</h3>-->
-                <!--<span class="up text_gray">Все септики здесь!</span>-->
-                <!--</div>-->
-                <!--</div>-->
-                <!--</div>-->
+
 
                 <div class="brand pull-left">
-                    <a href="index.html"><img src="img/logo_mobile.png" alt="logo"></a>
+                    <a href="index.html"><img src="img/header_logo.png" alt="logo"></a>
                 </div>
                 <div class="brand_text pull-left">
                     <h3 class="up">
-                        Гудсептик
+                        Каминпечь
                     </h3>
-                    <span class="text_gray up">
-                        Все септики здесь!
-                    </span>
                 </div>
             </div>
             <div class="contact_mobile pull-right">
@@ -165,9 +153,9 @@
     <div class="adventage">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-md-3 adventage_item">
+                <div class="col-md-6 col-lg-3  adventage_item">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             <h2 class="adventage_title">
                                 Печи
                             </h2>
@@ -176,15 +164,15 @@
                                 и экономичные печи с дровами
                             </p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                             <i class="sprite-adventage sprite-camin"></i>
                         </div>
 
                     </div>
                 </div>
-                <div class="col-md-3 adventage_item">
+                <div class="col-md-6 col-lg-3 adventage_item">
                     <div class="row">
-                   <div class="col-md-6">
+                   <div class="col-md-8">
                        <h2 class="adventage_title">
                            Камины
                        </h2>
@@ -193,27 +181,27 @@
                            Ну вообще-то не все хотят, но и если и хотят, то не всегда камин.
                        </p>
                    </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4">
                     <i class="sprite-adventage sprite-fire"></i>
                         </div>
                         </div>
                 </div>
-                <div class="col-md-3 adventage_item">
+                <div class="col-md-6 col-lg-3 adventage_item">
                     <div class="row">
-                    <div class="col-md-6">
-                    <i class="sprite-adventage sprite-zippo"></i>
-                        </div>
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             <h2 class="adventage_title">
                                 Котлы
                             </h2>
                             <p class="text_gray adventage_content">Чтобы у вас дома было тепло, вам нужен котёл. Желательно хороший.</p>
                         </div>
+                        <div class="col-md-4">
+                            <i class="sprite-adventage sprite-zippo"></i>
+                        </div>
                         </div>
                 </div>
-                <div class="col-md-3 adventage_item">
+                <div class="col-md-6 col-lg-3 adventage_item">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             <h2 class="adventage_title">
                                 Дымоходы
                             </h2>
@@ -222,7 +210,7 @@
                                 не помешал бы дымоход!
                             </p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-4">
                     <i class="sprite-adventage sprite-smoke"></i>
                             </div>
                         </div>
@@ -231,7 +219,7 @@
         </div>
     </div>
     <div class="cover_block">
-        <div class="container-fluid">
+        <div class="container-fluid full_width">
             <div class="row">
                 <div class="col-md-6 left_block">
                 <h1 class="up">Мы вас согреем!</h1>
@@ -304,7 +292,7 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <a href="#" class="circle_btn">
+                    <a href="#" class="btn_circle">
                         Весь каталог
                     </a>
                 </div>
@@ -312,7 +300,7 @@
         </div>
     </div>
     <div class="news_block">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section_capt_center">
@@ -402,14 +390,14 @@
     <div class="row footer_logo">
         <div class="col-md-12">
             <div class="logo">
-                <img src="img/header_logo.png" alt="logo" class="img-responsive">
+                <a href="index.html"><img src="img/header_logo.png" alt="logo" class="img-responsive"></a>
                 <h2>Каминпечь</h2>
             </div>
         </div>
     </div>
     <div class="row footer_info">
         <div class="col-md-3 footer_copy">
-            <p>© КаминПечь 2016</p>
+            <p>&copy; КаминПечь 2016</p>
             <p>Все права защищены</p>
         </div>
         <div class="col-md-3 footer_contact">
@@ -417,32 +405,31 @@
             <p>Санкт-Петербург, пр. Большевиков, 43</p>
         </div>
         <div class="col-md-3 umi_copy">
-            <p>Сайт создан бесплатно на UMI
-                Работает на UMI.CMS</p>
-            <p>Сайт создан бесплатно на UMI Работает на UMI.CMS</p>
+            <p>Сайт создан бесплатно на UMI</p>
+            <p>Работает на UMI.CMS</p>
         </div>
         <div class="col-md-3 footer_social">
-            <ul>
+            <ul class="list_inline">
                 <li>
-                    <i class="sprite-social sprite-social_fb"></i>
+                    <a href="#"><i class="sprite-social sprite-social_fb"></i></a>
                 </li>
                 <li>
-                    <i class="sprite-social sprite-social_vk"></i>
+                    <a href="#"><i class="sprite-social sprite-social_vk"></i></a>
                 </li>
                 <li>
-                    <i class="sprite-social sprite-social_tw"></i>
+                    <a href="#"><i class="sprite-social sprite-social_tw"></i></a>
                 </li>
                 <li>
-                    <i class="sprite-social sprite-social_inst"></i>
+                    <a href="#"><i class="sprite-social sprite-social_inst"></i></a>
                 </li>
                 <li>
-                    <i class="sprite-social sprite-social_odn"></i>
+                    <a href="#"><i class="sprite-social sprite-social_odn"></i></a>
                 </li>
             </ul>
         </div>
     </div>
 </div>
 </footer>
-
+<script src="js/script.js"></script>
 </body>
 </html>

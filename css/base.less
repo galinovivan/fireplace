@@ -97,6 +97,12 @@ button {
 .up {
   text-transform: uppercase;
 }
+.container-fluid {
+  padding: 0 5%;
+}
+.container-fluid.full_width {
+  padding: 0;
+}
 .modal {
   .modal-header {
     .margin_align();
@@ -211,6 +217,17 @@ button {
   color: @white;
   .transition();
   .btn_hover(@white, @color-base);
+}
+.btn_circle {
+  .btn_style(250px, 13px);
+  font-family: @baseFont;
+  font-size: @baseFontSize + 2;
+  color: @text_color_base;
+  background: transparent;
+  border: 1px solid @text_color_base;
+  .margin_align();
+  .radius(75px);
+  .btn_hover(@text_color_base, @white);
 }
 .grid_5 {
   width: 20%;
