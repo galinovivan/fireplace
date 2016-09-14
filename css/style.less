@@ -120,6 +120,7 @@ body.main_body {
     padding: 5px 0;
   }
   @media screen and (max-width: 991px) {
+    padding: 0;
     .top_nav {
       padding: 0;
       min-height: 0;
@@ -366,6 +367,11 @@ main {
         margin-bottom: 70px;
       }
     }
+    &:not(.best_goods) {
+      .goods_item {
+        margin-bottom: -1px;
+      }
+    }
     .goods_item {
       border: 1px solid @bord_color;
       margin-left: -1px;
@@ -491,6 +497,22 @@ main {
           font-family: @ultraLight;
 
         }
+        @media screen and (max-width: 991px) {
+          position: relative;
+          background: @backgroundGray;
+          border-right: 1px solid @bord_color;
+          span {
+            color: @black;
+          }
+        }
+      }
+    }
+  }
+  &.catalog_page {
+    .goods {
+      .btn_circle {
+        margin: 60px auto;
+        width: 305px;
       }
     }
   }
