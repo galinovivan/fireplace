@@ -1,11 +1,4 @@
 $(document).ready(function() {
-    
-   // инициализация fancybox
-    $('.fancybox_img').fancybox( {
-        transitionIn: 'elastic',
-        transitionOut: 'elastic'
-    });
-
     // адаптивное меню
     initHideELement($('#topNav'), $('#navToggle'), $('#navClose'), 'active');
    

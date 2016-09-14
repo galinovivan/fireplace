@@ -1059,6 +1059,32 @@ main .adventage .adventage_item_xs {
     padding: 0;
   }
 }
+main.category_page .adventage {
+  margin-top: 0;
+}
+main.category_page .adventage .adventage_item {
+  padding: 90px 40px;
+  height: 320px;
+  background: #f9f9f9;
+  border: 1px solid #ffffff;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+main.category_page .adventage .adventage_item:hover {
+  box-shadow: inset 0 0 0 10px #f6891f;
+  -webkit-box-shadow: inset 0 0 0 10px #f6891f;
+  -moz-box-shadow: inset 0 0 0 10px #f6891f;
+  -o-box-shadow: inset 0 0 0 10px #f6891f;
+}
+main.category_page .adventage .adventage_item:hover {
+  box-shadow: inset 0 0 0 10px #f6891f;
+  -webkit-box-shadow: inset 0 0 0 10px #f6891f;
+  -moz-box-shadow: inset 0 0 0 10px #f6891f;
+  -o-box-shadow: inset 0 0 0 10px #f6891f;
+}
 main .cover_block .left_block,
 main .cover_block .right_block {
   height: 665px;
