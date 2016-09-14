@@ -2,13 +2,43 @@
 @import "varibles";
 @import "base";
 //header
+body.main_body {
+  .page_header {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: transparent;
+    z-index: 100;
+    border: none;
+    padding: 0;
+    h2 {
+      color: @white;
+    }
+    .top_nav {
+      ul {
+        li {
+          a {
+            color: @white;
+          }
+        }
+      }
+    }
+    .top_contacts {
+      h3 {
+        color: @white;
+      }
+    }
+  }
+}
 .page_header {
-  position: absolute;
-  top: 50px;
-  left: 0;
-  width: 100%;
-  background: transparent;
-  z-index: 100;
+    background: white;
+    border-bottom: 1px solid @bord_color;
+  padding: 50px 0;
+  h2 {
+    .padding_margin_clear();
+    color: @black;
+  }
   .container-fluid {
     .row {
       .top_logo {
@@ -18,10 +48,6 @@
             width: auto;
             vertical-align: middle;
             overflow: visible;
-            h2 {
-              .padding_margin_clear();
-              color: @white;
-            }
           }
         }
         @media screen and (max-width: 1500px) {
@@ -50,7 +76,7 @@
       li {
         a {
           font-size: @smallFont;
-          color: @white;
+          color: @black;
           padding: 15px 20px 10px 20px;
           .transition(all, 0.25s);
           font-family: @mediumFont;
@@ -59,7 +85,7 @@
             color: @color-base;
           }
           &.active {
-            border: 1px solid @color-base;
+            color: @color-base;
             &:hover {
               border-color: @color-base;
             }
@@ -81,7 +107,7 @@
   .top_contacts {
     .align();
     h3 {
-      color: @white;
+      color: @black;
       font-size: @h3_size - 4;
     }
     @media screen and (max-width: 1500px) {
@@ -440,6 +466,30 @@ main {
           p {
             font-size: @h3_size;
           }
+        }
+      }
+    }
+  }
+  .gallery {
+    .gallery_item {
+      position: relative;
+      img {
+        width: 100%;
+        border: 1px solid @white;
+      }
+      .item_summary {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 75px;
+        width: 100%;
+        background: rgba(0, 0, 0, .4);
+        padding: 25px 0;
+        .align();
+        span {
+          color: @white;
+          font-family: @ultraLight;
+
         }
       }
     }

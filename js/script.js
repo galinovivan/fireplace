@@ -1,6 +1,13 @@
 $(document).ready(function() {
     
-   initHideELement($('#topNav'), $('#navToggle'), $('#navClose'), 'active');
+   // инициализация fancybox
+    $('.fancybox_img').fancybox( {
+        transitionIn: 'elastic',
+        transitionOut: 'elastic'
+    });
+
+    // адаптивное меню
+    initHideELement($('#topNav'), $('#navToggle'), $('#navClose'), 'active');
    
     function initHideELement(element, openToggle, closeToggle, newClass) {
         function initCollapse() {

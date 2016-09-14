@@ -347,6 +347,11 @@ button:focus {
   margin-bottom: 40px;
   text-align: left;
 }
+.section_capt h1 {
+  font-size: 45px;
+  text-align: center;
+  margin-top: 0;
+}
 .section_capt .row {
   position: relative;
 }
@@ -647,23 +652,39 @@ button:focus {
     margin-right: 10px;
   }
 }
-.page_header {
+body.main_body .page_header {
   position: absolute;
   top: 50px;
   left: 0;
   width: 100%;
   background: transparent;
   z-index: 100;
+  border: none;
+  padding: 0;
+}
+body.main_body .page_header h2 {
+  color: #ffffff;
+}
+body.main_body .page_header .top_nav ul li a {
+  color: #ffffff;
+}
+body.main_body .page_header .top_contacts h3 {
+  color: #ffffff;
+}
+.page_header {
+  background: white;
+  border-bottom: 1px solid #ebebeb;
+  padding: 50px 0;
+}
+.page_header h2 {
+  padding: 0;
+  margin: 0;
+  color: #101010;
 }
 .page_header .container-fluid .row .top_logo .media .media-body {
   width: auto;
   vertical-align: middle;
   overflow: visible;
-}
-.page_header .container-fluid .row .top_logo .media .media-body h2 {
-  padding: 0;
-  margin: 0;
-  color: #ffffff;
 }
 @media screen and (max-width: 1500px) {
   .page_header .container-fluid .row .top_logo .media .media-left {
@@ -690,7 +711,7 @@ button:focus {
 }
 .page_header .top_nav ul li a {
   font-size: 13px;
-  color: #ffffff;
+  color: #101010;
   padding: 15px 20px 10px 20px;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
@@ -704,7 +725,7 @@ button:focus {
   color: #f6891f;
 }
 .page_header .top_nav ul li a.active {
-  border: 1px solid #f6891f;
+  color: #f6891f;
 }
 .page_header .top_nav ul li a.active:hover {
   border-color: #f6891f;
@@ -718,7 +739,7 @@ button:focus {
   text-align: center;
 }
 .page_header .top_contacts h3 {
-  color: #ffffff;
+  color: #101010;
   font-size: 16px;
 }
 @media screen and (max-width: 1500px) {
@@ -1180,6 +1201,27 @@ main .news_block .news_item .news_content p {
   main .news_block .news_item .news_content p {
     font-size: 20px;
   }
+}
+main .gallery .gallery_item {
+  position: relative;
+}
+main .gallery .gallery_item img {
+  width: 100%;
+  border: 1px solid #ffffff;
+}
+main .gallery .gallery_item .item_summary {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 75px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 25px 0;
+  text-align: center;
+}
+main .gallery .gallery_item .item_summary span {
+  color: #ffffff;
+  font-family: 'muller_ultra_light';
 }
 footer {
   padding: 85px 0 85px 0;

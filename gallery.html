@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+        <html>
+<head>
+    <meta charset="utf-8">
+    <title>Галерея</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sprite.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+    <script src="libs/fancybox/jquery.fancybox.js"></script>
+</head>
+<body>
+<div class="modal fade" id="callBackModal">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" data-dismiss="modal" aria-hidden="true" class="close" style="opacity: 1;"><i class="fa fa-close"></i></button>
+                <h2 class="up modal-title">Оставить заявку</h2>
+
+            </div>
+            <div class="modal-body">
+                <form method="post" id="callBackForm">
+                    <input type="text" name="name" placeholder="Как вас зовут?" required>
+                    <input type="text" name="user_contact" placeholder="Почта или телефон" required>
+                                        <textarea name="messages" id="" cols="30" rows="7"
+                                                  placeholder="А вот тут то мы и напишем!"></textarea>
+                    <input type="submit" name="done" value="ОТПРАВИТЬ">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--end modal-->
+<header>
+    <div class="page_header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 col-lg-3 top_logo background_white clearfix hidden-xs hidden-sm">
+                    <div class="media">
+                        <a class="media-left" href="index.html">
+                            <img src="img/header_logo.png" alt="logo" class="media-object img-responsive">
+                        </a>
+                        <div class="media-body">
+                            <h2 class="media-heading">
+                                Каминпечь
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-lg-5 top_nav col-xs-12 col-sm-12">
+                    <ul class="list_inline" id="topNav">
+                        <li><a href="about.html" class="up">О компании</a></li>
+                        <li><a href="catalog.html" class="up">Каталог</a></li>
+                        <li><a href="news.html" class="up">Новости</a></li>
+                        <li><a href="reviews.html" class="up">Отзывы</a></li>
+                        <li><a href="gallery.html" class="up active">Галерея</a></li>
+                        <li><a href="contacts.html" class="up">Контакты</a></li>
+                        <li class="visible-xs visible-sm" id="navClose"><i class="fa fa-close"></i></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-1 hidden-xs hidden-sm">
+                    <div class="row">
+                        <div class="col-md-6 top_contacts">
+                            <h3>+7(812)123-45-67</h3>
+                        </div>
+                        <div class="col-md-6 top_call">
+                            <a href="#callBackModal" data-toggle="modal" class="btn_base">Заявка</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header mobile-->
+    <div class="header_mobile visible-xs visible-sm">
+        <div class="container-fluid">
+            <div class="row clearfix">
+                <a id="navToggle" class="nav_mobile pull-left">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+
+                <div class="logo_mobile clearfix">
+
+
+                    <div class="brand pull-left">
+                        <a href="index.html"><img src="img/header_logo.png" alt="logo"></a>
+                    </div>
+                    <div class="brand_text pull-left">
+                        <h3 class="up">
+                            Каминпечь
+                        </h3>
+                    </div>
+                </div>
+                <div class="contact_mobile pull-right">
+                    <a href="#callBackModal" data-toggle="modal"><i class="fa fa-pencil"></i> </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--end header-->
+</header>
+<main class="gallery_page">
+<div class="gallery">
+    <div class="container-fluid full_width">
+        <div class="row">
+            <div class="section_capt">
+                <h1>Галерея</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 gallery_item">
+                <a href="img/gallery_item_1.jpg" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_1.jpg" alt="photo" class="img-responsive">
+                    </a>
+                <div class="item_summary">
+                    <span>Оборудовали камин в доме в Сосново</span>
+                </div>
+            </div>
+            <div class="col-md-3 gallery_item">
+                <a href="img/gallery_item_2.jpg" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_2.jpg" alt="photo" class="img-responsive">
+                    </a>
+                <div class="item_summary">
+                    <span>Камин с дровами и два бокала тоже мы поставили</span>
+                </div>
+            </div>
+            <div class="col-md-3 gallery_item">
+                 <a href="img/gallery_item_3.jpg" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_3.jpg" alt="photo" class="img-responsive">
+                     </a>
+                <div class="item_summary">
+                    <span>Красивый камин с декоративным кирпичом</span>
+                </div>
+            </div>
+            <div class="col-md-3 gallery_item">
+                <a href="img/gallery_item_4" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_4.jpg" alt="photo" class="img-responsive">
+                    </a>
+                <div class="item_summary">
+                    <span>Оброудовали камин в доме в Сосново</span>
+                </div>
+            </div>
+            <div class="col-md-3 gallery_item">
+                <a href="img/gallery_item_5.jpg" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_5.jpg" alt="photo" class="img-responsive">
+                    </a>
+                <div class="item_summary">
+                    <span>Оброудовали камин в доме в Сосново</span>
+                </div>
+            </div>
+            <div class="col-md-3 gallery_item">
+                <a href="img/gallery_item_6.jpg" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_6.jpg" alt="photo" class="img-responsive">
+                    </a>
+                <div class="item_summary">
+                    <span>Оброудовали камин в доме в Сосново</span>
+                </div>
+            </div>
+            <div class="col-md-3 gallery_item">
+                <a href="img/gallery_item_7.jpg" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_7.jpg" alt="photo" class="img-responsive">
+                    </a>
+                <div class="item_summary">
+                    <span>Оброудовали камин в доме в Сосново</span>
+                </div>
+            </div>
+            <div class="col-md-3 gallery_item">
+                <a href="img/gallery_item_8.jpg" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_8.jpg" alt="photo" class="img-responsive">
+                    </a>
+                <div class="item_summary">
+                    <span>Оброудовали камин в доме в Сосново</span>
+                </div>
+            </div>
+            <div class="col-md-3 gallery_item">
+                <a href="img/gallery_item_1.jpg" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_1.jpg" alt="photo" class="img-responsive">
+                    </a>
+                <div class="item_summary">
+                    <span>Оброудовали камин в доме в Сосново</span>
+                </div>
+            </div>
+            <div class="col-md-3 gallery_item">
+                <a href="img/gallery_item_2.jpg" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_2.jpg" alt="photo" class="img-responsive">
+                    </a>
+                <div class="item_summary">
+                    <span>Оброудовали камин в доме в Сосново</span>
+                </div>
+            </div>
+            <div class="col-md-3 gallery_item">
+                <a href="img/gallery_item_3.jpg" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_3.jpg" alt="photo" class="img-responsive">
+                    </a>
+                <div class="item_summary">
+                    <span>Оброудовали камин в доме в Сосново</span>
+                </div>
+            </div>
+            <div class="col-md-3 gallery_item">
+                <a href="img/gallery_item_4.jpg" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_4.jpg" alt="photo" class="img-responsive">
+                    </a>
+                <div class="item_summary">
+                    <span>Оброудовали камин в доме в Сосново</span>
+                </div>
+            </div>
+            <div class="col-md-3 gallery_item">
+                <a href="img/gallery_item_5.jpg" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_5.jpg" alt="photo" class="img-responsive">
+                    </a>
+                <div class="item_summary">
+                    <span>Оброудовали камин в доме в Сосново</span>
+                </div>
+            </div>
+            <div class="col-md-3 gallery_item">
+                <a href="img/gallery_item_6.jpg" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_6.jpg" alt="photo" class="img-responsive">
+                    </a>
+                <div class="item_summary">
+                    <span>Оброудовали камин в доме в Сосново</span>
+                </div>
+            </div>
+            <div class="col-md-3 gallery_item">
+                <a href="img/gallery_item_7.jpg" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_7.jpg" alt="photo" class="img-responsive">
+                    </a>
+                <div class="item_summary">
+                    <span>Оброудовали камин в доме в Сосново</span>
+                </div>
+            </div>
+            <div class="col-md-3 gallery_item">
+                <a href="img/gallery_item_8.jpg" class="fancybox_img" rel="gallery_group">
+                <img src="img/gallery_item_8.jpg" alt="photo" class="img-responsive">
+                    </a>
+                <div class="item_summary">
+                    <span>Оброудовали камин в доме в Сосново</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</main>
+<div class="pre_footer"></div>
+<footer>
+    <div class="container-fluid">
+        <div class="row footer_logo hidden-xs hidden-sm">
+            <div class="col-md-12">
+                <div class="logo">
+                    <a href="index.html"><img src="img/header_logo.png" alt="logo" class="img-responsive"></a>
+                    <h2>Каминпечь</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row footer_info">
+            <div class="col-md-3 footer_copy hidden-xs hidden-sm">
+                <p>&copy; КаминПечь 2016</p>
+                <p>Все права защищены</p>
+            </div>
+            <div class="col-md-3 footer_contact col-xs-6">
+                <h3 class="hidden-xs hidden-sm">+7(812)123-45-67</h3>
+                <p>Санкт-Петербург, пр. Большевиков, 43</p>
+            </div>
+            <div class="col-md-3 umi_copy col-xs-6">
+                <p>Сайт создан бесплатно на UMI</p>
+                <p>Работает на UMI.CMS</p>
+            </div>
+            <div class="col-xs-6 visible-xs visible-sm footer_phone">
+                <h3>+7(812)123-45-67</h3>
+            </div>
+            <div class="col-md-3 footer_social hidden-xs hidden-sm">
+                <ul class="list_inline">
+                    <li>
+                        <a href="#"><i class="sprite-social sprite-social_fb"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="sprite-social sprite-social_vk"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="sprite-social sprite-social_tw"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="sprite-social sprite-social_inst"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="sprite-social sprite-social_odn"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="visible-xs visible-sm col-xs-12 footer_social">
+                <ul class="list_inline">
+                    <li><a href="#"><i class="sprite-social-mobile sprite-social_mobile_fb"></i></a></li>
+                    <li><a href="#"><i class="sprite-social-mobile sprite-social_mobile_vk"></i></a></li>
+                    <li><a href="#"><i class="sprite-social-mobile sprite-social_mobile_tw"></i></a></li>
+                    <li><a href="#"><i class="sprite-social-mobile sprite-social_mobile_inst"></i></a></li>
+                    <li><a href="#"><i class="sprite-social-mobile sprite-social_mobile_odn"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
