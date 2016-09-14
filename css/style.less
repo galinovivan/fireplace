@@ -580,14 +580,40 @@ main {
     }
   }
   .reviews {
+    margin-bottom: 70px;
     .review_item {
       border: 1px solid @bord_color;
-      margin-right: -1px;
       padding: 75px 100px;
       .align();
       div {
         margin-bottom: 55px;
       }
+      &.grid-item {
+        margin-bottom: -1px;
+        width: 50%;
+         &.height-1 {
+           height: 525px;
+           float: left;
+           border-right: none;
+         }
+        &.height-2 {
+          height: 650px;
+          float: right;
+        }
+
+      }
+    }
+    a {
+      margin-top: 70px;
+      width: 305px;
+    }
+    @media screen and (max-width: 991px) {
+        .review_item {
+          &.grid-item {
+            width: 100%;
+            height: auto !important;
+          }
+        }
     }
   }
 }

@@ -115,8 +115,9 @@
                 <h1>Отзывы</h1>
                 </div>
             </div>
-        <div class="row">
-            <div class="col-md-6 review_item">
+        </div>
+    <div class="grid clearfix">
+            <div class="grid-item height-1 review_item">
                 <div class="char">
                     <img src="img/char.png">
                 </div>
@@ -134,7 +135,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 review_item">
+            <div class="grid-item height-2 review_item">
                 <div class="char">
                     <img src="img/char.png">
                 </div>
@@ -152,7 +153,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 review_item">
+            <div class="grid-item height-1 review_item">
                 <div class="char">
                     <img src="img/char.png">
                 </div>
@@ -169,12 +170,12 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 review_item">
+            <div class="grid-item height-2 review_item">
                 <div class="char">
                     <img src="img/char.png">
                 </div>
                 <div class="review_content">
-                    <p>П Заглубленные камины монтируются в специальную нишу или стену, смотря что предусмотрено по проекту. Такой вариант, безусловно, очень эффектный. Пламя в стене завораживает, на огонь хочется смотреть снова и снова.
+                    <p>Заглубленные камины монтируются в специальную нишу или стену, смотря что предусмотрено по проекту. Такой вариант, безусловно, очень эффектный. Пламя в стене завораживает, на огонь хочется смотреть снова и снова.
                     </p>
                     <p> Открытый камин устанавливается в средине помещения, его конструктивные особенности требуют большой пространственной площади вокруг, ведь топливник должен быть открыт со всех сторон.</p>
                 </div>
@@ -188,8 +189,16 @@
                 </div>
             </div>
             </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <a href="#" class="btn_circle">
+                    Развернуть ещё отзывов
+                </a>
+            </div>
         </div>
-</div>
+    </div>
+    </div>
 </main>
 <div class="pre_footer"></div>
 <footer>
@@ -249,6 +258,13 @@
         </div>
     </div>
 </footer>
+ <script>
+     $('.document').ready(function() {
+        $('.grid').masontry({
+            initSelector: 'grid-item',
+        })
+     });
+ </script>
 <script src="js/script.js"></script>
 </body>
 </html>

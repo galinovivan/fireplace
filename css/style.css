@@ -1481,14 +1481,39 @@ main .contacts .contact_form h2 {
     width: 80%;
   }
 }
+main .reviews {
+  margin-bottom: 70px;
+}
 main .reviews .review_item {
   border: 1px solid #ebebeb;
-  margin-right: -1px;
   padding: 75px 100px;
   text-align: center;
 }
 main .reviews .review_item div {
   margin-bottom: 55px;
+}
+main .reviews .review_item.grid-item {
+  margin-bottom: -1px;
+  width: 50%;
+}
+main .reviews .review_item.grid-item.height-1 {
+  height: 525px;
+  float: left;
+  border-right: none;
+}
+main .reviews .review_item.grid-item.height-2 {
+  height: 650px;
+  float: right;
+}
+main .reviews a {
+  margin-top: 70px;
+  width: 305px;
+}
+@media screen and (max-width: 991px) {
+  main .reviews .review_item.grid-item {
+    width: 100%;
+    height: auto !important;
+  }
 }
 footer {
   padding: 85px 0 85px 0;
