@@ -55,6 +55,10 @@ ul {
 h3 {
   font-size: @h3_size;
 }
+h4 {
+  font-size: @h4_size;
+  font-family: @mediumFont;
+}
 a {
   &:hover {
     text-decoration: none;
@@ -133,6 +137,10 @@ button {
     .form_style();
     .light_form();
   }
+}
+.base_form {
+  .light_form();
+  .margin_align();
 }
 .background_gray {
   background: @backgroundGray;

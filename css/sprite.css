@@ -107,3 +107,31 @@
 }
 
 /*social mobile*/
+
+/*sprite contact*/
+
+.sprite-contact {
+    background-image: url('../img/sprite-contact.png');
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-contact-sprite_contact_mail {
+    width: 55px;
+    height: 57px;
+    background-position: -5px -5px;
+}
+
+.sprite-contact-sprite_contact_marker {
+    width: 46px;
+    height: 56px;
+    background-position: -70px -5px;
+}
+
+.sprite-contact-sprite_contact_phone {
+    width: 55px;
+    height: 55px;
+    background-position: -70px -71px;
+}
+
+/*sprite contact*/

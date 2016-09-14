@@ -528,6 +528,57 @@ main {
       }
     }
   }
+  .contacts {
+    .contact_info {
+      background: @pie_color;
+      padding: 50px 7.5%;
+      height: 160px;
+      border-bottom: 1px solid @white;
+      h4 {
+        margin-top: 20px;
+      }
+    }
+    #map {
+      height: 730px;
+    }
+    .contact_form {
+      padding: 100px 0;
+      background: @backgroundGray;
+      height: 730px;
+      form {
+        width: 40%;
+      }
+      h2 {
+        margin-bottom: 40px;
+      }
+    }
+    @media screen and (max-width: 991px) {
+    .contact_info {
+      height: 270px;
+      border-color: @bord_color;
+      .info_mobile {
+        height: 270px;
+        .align();
+        div {
+          margin-bottom: 30px;
+        }
+          div:not(.phone) {
+            h3 {
+              font-family: @baseFont;
+            }
+          }
+        }
+      }
+      #map {
+        height: 495px;
+      }
+      .contact_form {
+        form {
+          width: 80%;
+        }
+      }
+    }
+  }
 }
 footer {
   padding: 85px 0 85px 0;

@@ -75,6 +75,10 @@ ul {
 h3 {
   font-size: 20px;
 }
+h4 {
+  font-size: 18px;
+  font-family: 'futuredemic';
+}
 a:hover {
   text-decoration: none;
 }
@@ -283,36 +287,294 @@ button:focus {
 }
 .modal form input:not([type="submit"]),
 .modal form textarea {
-  border: 1px solid #f6891f;
+  border: 1px solid #101010;
   border-right: none;
   border-left: none;
   border-top: none;
   margin-top: 0;
-  margin-bottom: 10px;
+  background: transparent;
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.modal form input:not([type="submit"])::-webkit-input-placeholder,
+.modal form textarea::-webkit-input-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.modal form input:not([type="submit"])::-webkit-input-placeholder,
+.modal form textarea::-webkit-input-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.modal form input:not([type="submit"])::-moz-placeholder,
+.modal form textarea::-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.modal form input:not([type="submit"]):-moz-placeholder,
+.modal form textarea:-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.modal form input:not([type="submit"])::-moz-placeholder,
+.modal form textarea::-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.modal form input:not([type="submit"]):-moz-placeholder,
+.modal form textarea:-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
 }
 .modal form input[type="submit"] {
   padding: 13px;
+  width: 100%;
+  background: #f6891f;
+  border: none;
+  color: #ffffff;
+  font-family: 'futuredemic';
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.modal form input[type="submit"]:hover {
+  background: #f8a350;
+  color: #ffffff;
+  text-decoration: none;
+}
+.modal form input[type="submit"]:hover {
+  background: #f8a350;
+  color: #ffffff;
+  text-decoration: none;
 }
 @media screen and (max-width: 991px) {
   .modal form input[type="submit"] {
     width: 100%;
+    padding: 17px;
   }
 }
 .modal form input:not([type="submit"]),
 .modal form textarea {
-  border: 1px solid #f6891f;
+  border: 1px solid #101010;
   border-right: none;
   border-left: none;
   border-top: none;
   margin-top: 0;
-  margin-bottom: 10px;
+  background: transparent;
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.modal form input:not([type="submit"])::-webkit-input-placeholder,
+.modal form textarea::-webkit-input-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.modal form input:not([type="submit"])::-webkit-input-placeholder,
+.modal form textarea::-webkit-input-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.modal form input:not([type="submit"])::-moz-placeholder,
+.modal form textarea::-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.modal form input:not([type="submit"]):-moz-placeholder,
+.modal form textarea:-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.modal form input:not([type="submit"])::-moz-placeholder,
+.modal form textarea::-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.modal form input:not([type="submit"]):-moz-placeholder,
+.modal form textarea:-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
 }
 .modal form input[type="submit"] {
   padding: 13px;
+  width: 100%;
+  background: #f6891f;
+  border: none;
+  color: #ffffff;
+  font-family: 'futuredemic';
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.modal form input[type="submit"]:hover {
+  background: #f8a350;
+  color: #ffffff;
+  text-decoration: none;
+}
+.modal form input[type="submit"]:hover {
+  background: #f8a350;
+  color: #ffffff;
+  text-decoration: none;
 }
 @media screen and (max-width: 991px) {
   .modal form input[type="submit"] {
     width: 100%;
+    padding: 17px;
+  }
+}
+.base_form {
+  display: block;
+  margin: 0 auto;
+}
+.base_form input:not([type="submit"]),
+.base_form textarea {
+  border: 1px solid #101010;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  margin-top: 0;
+  background: transparent;
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.base_form input:not([type="submit"])::-webkit-input-placeholder,
+.base_form textarea::-webkit-input-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.base_form input:not([type="submit"])::-webkit-input-placeholder,
+.base_form textarea::-webkit-input-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.base_form input:not([type="submit"])::-moz-placeholder,
+.base_form textarea::-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.base_form input:not([type="submit"]):-moz-placeholder,
+.base_form textarea:-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.base_form input:not([type="submit"])::-moz-placeholder,
+.base_form textarea::-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.base_form input:not([type="submit"]):-moz-placeholder,
+.base_form textarea:-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.base_form input[type="submit"] {
+  padding: 13px;
+  width: 100%;
+  background: #f6891f;
+  border: none;
+  color: #ffffff;
+  font-family: 'futuredemic';
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.base_form input[type="submit"]:hover {
+  background: #f8a350;
+  color: #ffffff;
+  text-decoration: none;
+}
+.base_form input[type="submit"]:hover {
+  background: #f8a350;
+  color: #ffffff;
+  text-decoration: none;
+}
+@media screen and (max-width: 991px) {
+  .base_form input[type="submit"] {
+    width: 100%;
+    padding: 17px;
+  }
+}
+.base_form input:not([type="submit"]),
+.base_form textarea {
+  border: 1px solid #101010;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  margin-top: 0;
+  background: transparent;
+  display: block;
+  padding: 10px 0;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.base_form input:not([type="submit"])::-webkit-input-placeholder,
+.base_form textarea::-webkit-input-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.base_form input:not([type="submit"])::-webkit-input-placeholder,
+.base_form textarea::-webkit-input-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.base_form input:not([type="submit"])::-moz-placeholder,
+.base_form textarea::-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.base_form input:not([type="submit"]):-moz-placeholder,
+.base_form textarea:-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.base_form input:not([type="submit"])::-moz-placeholder,
+.base_form textarea::-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.base_form input:not([type="submit"]):-moz-placeholder,
+.base_form textarea:-moz-placeholder {
+  color: #101010;
+  font-size: 16px;
+}
+.base_form input[type="submit"] {
+  padding: 13px;
+  width: 100%;
+  background: #f6891f;
+  border: none;
+  color: #ffffff;
+  font-family: 'futuredemic';
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.base_form input[type="submit"]:hover {
+  background: #f8a350;
+  color: #ffffff;
+  text-decoration: none;
+}
+.base_form input[type="submit"]:hover {
+  background: #f8a350;
+  color: #ffffff;
+  text-decoration: none;
+}
+@media screen and (max-width: 991px) {
+  .base_form input[type="submit"] {
+    width: 100%;
+    padding: 17px;
   }
 }
 .background_gray {
@@ -1268,6 +1530,51 @@ main .gallery .gallery_item .item_summary span {
 main.catalog_page .goods .btn_circle {
   margin: 60px auto;
   width: 305px;
+}
+main .contacts .contact_info {
+  background: #fdf7ef;
+  padding: 50px 7.5%;
+  height: 160px;
+  border-bottom: 1px solid #ffffff;
+}
+main .contacts .contact_info h4 {
+  margin-top: 20px;
+}
+main .contacts #map {
+  height: 730px;
+}
+main .contacts .contact_form {
+  padding: 100px 0;
+  background: #f9f9f9;
+  height: 730px;
+}
+main .contacts .contact_form form {
+  width: 40%;
+}
+main .contacts .contact_form h2 {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 991px) {
+  main .contacts .contact_info {
+    height: 270px;
+    border-color: #ebebeb;
+  }
+  main .contacts .contact_info .info_mobile {
+    height: 270px;
+    text-align: center;
+  }
+  main .contacts .contact_info .info_mobile div {
+    margin-bottom: 30px;
+  }
+  main .contacts .contact_info .info_mobile div:not(.phone) h3 {
+    font-family: 'future_book';
+  }
+  main .contacts #map {
+    height: 495px;
+  }
+  main .contacts .contact_form form {
+    width: 80%;
+  }
 }
 footer {
   padding: 85px 0 85px 0;

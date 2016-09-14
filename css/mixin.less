@@ -387,19 +387,32 @@
 .light_form() {
   input:not([type="submit"]),
   textarea {
-   border: 1px solid @color-base;
+   border: 1px solid @black;
     border-right: none;
     border-left: none;
     border-top: none;
     margin-top: 0;
-    margin-bottom: 10px;
+    background: transparent;
+    display: block;
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 30px;
+    .placeholder_style();
+    .moz_placeholder_style();
   }
   input[type="submit"] {
     padding: 13px;
+    width: 100%;
+    background: @color-base;
+    border: none;
+    color: @white;
+    font-family: @mediumFont;
+    .btn_hov();
   }
   @media screen and (max-width: 991px) {
     input[type="submit"] {
       width: 100%;
+      padding: 17px;
     }
   }
 }
