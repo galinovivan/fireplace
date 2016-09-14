@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Камины</title>
+    <title>Контакты</title>
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/sprite.css">
     <link rel="stylesheet" href="css/style.css">
@@ -10,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
 </head>
 <body>
 <!--modal-->
@@ -53,9 +54,9 @@
                 <div class="col-md-7 col-lg-5 top_nav col-xs-12 col-sm-12">
                     <ul class="list_inline" id="topNav">
                         <li><a href="about.html" class="up">О компании</a></li>
-                        <li><a href="catalog.html" class="up active">Каталог</a></li>
+                        <li><a href="catalog.html" class="up">Каталог</a></li>
                         <li><a href="news.html" class="up">Новости</a></li>
-                        <li><a href="reviews.html" class="up">Отзывы</a></li>
+                        <li><a href="reviews.html" class="up active">Отзывы</a></li>
                         <li><a href="gallery.html" class="up">Галерея</a></li>
                         <li><a href="contacts.html" class="up">Контакты</a></li>
                         <li class="visible-xs visible-sm" id="navClose"><i class="fa fa-close"></i></li>
@@ -106,139 +107,89 @@
     </div>
     <!--end header-->
 </header>
-<main class="category_page">
-    <div class="adventage">
-        <div class="container">
-            <div class="row">
-                <div class="section_capt">
-                    <h1>Каталог</h1>
+<main class="review_page">
+<div class="reviews">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="section_capt">
+                <h1>Отзывы</h1>
                 </div>
             </div>
-            <div class="row hidden-xs hidden-sm">
-                <div class="col-md-10 col-lg-8 col-md-offset-1 col-lg-offset-2">
-                    <div class="row">
-                <div class="col-md-6 col-lg-6  adventage_item">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h2 class="adventage_title">
-                                Печи
-                            </h2>
-                            <p class="text_gray adventage_content">
-                                В ассортименте представлены высокопроизводительные
-                                и экономичные печи с дровами
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="sprite-adventage sprite-camin"></i>
-                        </div>
-
+        <div class="row">
+            <div class="col-md-6 review_item">
+                <div class="char">
+                    <img src="img/char.png">
+                </div>
+                <div class="review_content">
+                    <p>Предмет деятельности, как следует из вышесказанного, создает закон исключённого третьего. Закон внешнего мира, следовательно,
+                        выводит язык образов.
+                    </p>
+                </div>
+                <div class="review_photo">
+                    <div class="photo">
+                        <img src="img/man_1.png">
+                    </div>
+                    <div class="name">
+                        <span>Василий Петров</span>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 adventage_item">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h2 class="adventage_title">
-                                Камины
-                            </h2>
-                            <p class="text_gray adventage_content">
-                                Все обычно хотят, чтобы у них был камин.
-                                Ну вообще-то не все хотят, но и если и хотят, то не всегда камин.
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="sprite-adventage sprite-fire"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 adventage_item">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h2 class="adventage_title">
-                                Котлы
-                            </h2>
-                            <p class="text_gray adventage_content">Чтобы у вас дома было тепло, вам нужен котёл. Желательно хороший.</p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="sprite-adventage sprite-zippo"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-6 adventage_item">
-                    <div class="row">
-                        <div class="col-md-8">
-                            <h2 class="adventage_title">
-                                Дымоходы
-                            </h2>
-                            <p class="text_gray adventage_content">
-                                Если вы купите печку, то у вас будет дым. И вот тут-то вам как раз
-                                не помешал бы дымоход!
-                            </p>
-                        </div>
-                        <div class="col-md-4">
-                            <i class="sprite-adventage sprite-smoke"></i>
-                        </div>
-                    </div>
-                </div>
-                        </div>
-                    </div>
             </div>
-            <div class="row mobile_vers visible-xs visible-sm">
-                <div class="col-xs-12 adventage_item_xs">
-                    <div class="row">
-                        <div class="col-xs-3 adventage_img">
-                            <i class="sprite-adventage sprite-camin"></i>
-                        </div>
-                        <div class="col-xs-9 adventage_content">
-                            <h2 class="adventage_title">
-                                Печи
-                            </h2>
-                            <p class="text_gray">В ассортименте представлены высокопроизводительные и экономичные печи
-                                с дровами.</p>
-                        </div>
+            <div class="col-md-6 review_item">
+                <div class="char">
+                    <img src="img/char.png">
+                </div>
+                <div class="review_content">
+                    <p>П Заглубленные камины монтируются в специальную нишу или стену, смотря что предусмотрено по проекту. Такой вариант, безусловно, очень эффектный. Пламя в стене завораживает, на огонь хочется смотреть снова и снова.
+                    </p>
+                    <p> Открытый камин устанавливается в средине помещения, его конструктивные особенности требуют большой пространственной площади вокруг, ведь топливник должен быть открыт со всех сторон.</p>
+                </div>
+                <div class="review_photo">
+                    <div class="photo">
+                        <img src="img/man_2.png">
+                    </div>
+                    <div class="name">
+                        <span>Иван Сидоров</span>
                     </div>
                 </div>
-                <div class="col-xs-12 adventage_item_xs">
-                    <div class="row">
-                        <div class="col-xs-3 adventage_img">
-                            <i class="sprite-adventage sprite-fire"></i>
-                        </div>
-                        <div class="col-xs-9 adventage_content">
-                            <h2 class="adventage_title">
-                                Камины
-                            </h2>
-                            <p class="text_gray">Все обычно хотят, чтобы у них был камин. Ну вообще-то не все хотят, но и если и хотят, то не всегда камин.</p>
-                        </div>
+            </div>
+            <div class="col-md-6 review_item">
+                <div class="char">
+                    <img src="img/char.png">
+                </div>
+                <div class="review_content">
+                    <p>Два года назад мы приобрели в дом печной камин EP2 и остались довольны. Сейчас выбираем печной камин на дачу и уверены, что нам и в этот раз поможет фирма "Теплый камень", печи и камины для дома и дачи у них можно купить с установкой
+                    </p>
+                </div>
+                <div class="review_photo">
+                    <div class="photo">
+                        <img src="img/man_3.png">
+                    </div>
+                    <div class="name">
+                        <span>Василий Петров</span>
                     </div>
                 </div>
-                <div class="col-xs-12 adventage_item_xs">
-                    <div class="row">
-                        <div class="col-xs-3 adventage_img">
-                            <i class="sprite-adventage sprite-zippo"></i>
-                        </div>
-                        <div class="col-xs-9 adventage_content">
-                            <h2 class="adventage_title">
-                                Котлы
-                            </h2>
-                            <p class="text_gray">Чтобы у вас дома было тепло, вам нужен котёл. Желательно хороший.</p>
-                        </div>
+            </div>
+            <div class="col-md-6 review_item">
+                <div class="char">
+                    <img src="img/char.png">
+                </div>
+                <div class="review_content">
+                    <p>П Заглубленные камины монтируются в специальную нишу или стену, смотря что предусмотрено по проекту. Такой вариант, безусловно, очень эффектный. Пламя в стене завораживает, на огонь хочется смотреть снова и снова.
+                    </p>
+                    <p> Открытый камин устанавливается в средине помещения, его конструктивные особенности требуют большой пространственной площади вокруг, ведь топливник должен быть открыт со всех сторон.</p>
+                </div>
+                <div class="review_photo">
+                    <div class="photo">
+                        <img src="img/man_4.png">
+                    </div>
+                    <div class="name">
+                        <span>Василий Петров</span>
                     </div>
                 </div>
-                <div class="col-xs-12 adventage_item_xs">
-                    <div class="row">
-                        <div class="col-xs-3 adventage_img">
-                            <i class="sprite-adventage sprite-smoke"></i>
-                        </div>
-                        <div class="col-xs-9 adventage_content">
-                            <h2 class="adventage_title">
-                                Дымоходы
-                            </h2>
-                            <p class="text_gray">Если вы купите печку, то у вас будет дым. И вот тут-то вам как раз не помешал бы дымоход! </p>
-                        </div>
-                    </div>
-                </div>
+            </div>
             </div>
         </div>
-    </div>
+</div>
 </main>
 <div class="pre_footer"></div>
 <footer>

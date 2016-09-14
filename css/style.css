@@ -183,107 +183,7 @@ button:focus {
   -moz-border-radius: 0;
 }
 .modal form {
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-}
-.modal form > input,
-.modal form textarea {
-  display: block;
-  background: #ffffff;
-  border: 1px solid #ebebeb;
-  padding: 15px 5%;
-  width: 100%;
-  margin-top: -1px;
-  color: #101010;
-}
-.modal form > input[type="submit"] {
-  border: 2px solid #f6891f;
-  background: transparent;
-  padding: 10px;
-  width: 250px;
-  display: block;
-  color: #f6891f;
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  -o-transition: all 0.6s;
-  transition: all 0.6s;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-  margin-top: 40px;
-}
-.modal form > input[type="submit"]:hover {
-  color: #ffffff;
-  background: #f6891f;
-  text-decoration: none !important;
-}
-.modal form > input[type="submit"]:hover {
-  color: #ffffff;
-  background: #f6891f;
-  text-decoration: none !important;
-}
-.modal form > input[type="submit"]:hover {
-  color: #ffffff;
-  background: #f6891f;
-  text-decoration: none !important;
-}
-.modal form > input[type="submit"]:hover {
-  color: #ffffff;
-  background: #f6891f;
-  text-decoration: none !important;
-}
-.modal form > input,
-.modal form textarea {
-  display: block;
-  background: #ffffff;
-  border: 1px solid #ebebeb;
-  padding: 15px 5%;
-  width: 100%;
-  margin-top: -1px;
-  color: #101010;
-}
-.modal form > input[type="submit"] {
-  border: 2px solid #f6891f;
-  background: transparent;
-  padding: 10px;
-  width: 250px;
-  display: block;
-  color: #f6891f;
-  -webkit-transition: all 0.6s;
-  -moz-transition: all 0.6s;
-  -ms-transition: all 0.6s;
-  -o-transition: all 0.6s;
-  transition: all 0.6s;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  -ms-transition: all 0.2s;
-  -o-transition: all 0.2s;
-  transition: all 0.2s;
-  margin-top: 40px;
-}
-.modal form > input[type="submit"]:hover {
-  color: #ffffff;
-  background: #f6891f;
-  text-decoration: none !important;
-}
-.modal form > input[type="submit"]:hover {
-  color: #ffffff;
-  background: #f6891f;
-  text-decoration: none !important;
-}
-.modal form > input[type="submit"]:hover {
-  color: #ffffff;
-  background: #f6891f;
-  text-decoration: none !important;
-}
-.modal form > input[type="submit"]:hover {
-  color: #ffffff;
-  background: #f6891f;
-  text-decoration: none !important;
+  padding: 0 75px;
 }
 .modal form input:not([type="submit"]),
 .modal form textarea {
@@ -427,6 +327,11 @@ button:focus {
   .modal form input[type="submit"] {
     width: 100%;
     padding: 17px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .modal form {
+    padding: 0 30px;
   }
 }
 .base_form {
@@ -1575,6 +1480,15 @@ main .contacts .contact_form h2 {
   main .contacts .contact_form form {
     width: 80%;
   }
+}
+main .reviews .review_item {
+  border: 1px solid #ebebeb;
+  margin-right: -1px;
+  padding: 75px 100px;
+  text-align: center;
+}
+main .reviews .review_item div {
+  margin-bottom: 55px;
 }
 footer {
   padding: 85px 0 85px 0;
