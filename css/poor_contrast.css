@@ -833,8 +833,10 @@ html.poor_vision body.black_body a,
 html.poor_vision body.black_body li {
   color: #ffffff !important;
 }
-html.poor_vision body.blue_body {
-  background: #9dd1ff;
+html.poor_vision body.blue_body,
+html.poor_vision body form,
+html.poor_vision body .modal {
+  background: #9dd1ff !important;
 }
 html.poor_vision body h1,
 html.poor_vision body h2,
@@ -844,6 +846,7 @@ html.poor_vision body h5,
 html.poor_vision body p,
 html.poor_vision body span,
 html.poor_vision body a,
-html.poor_vision body li {
+html.poor_vision body li,
+html.poor_vision body input {
   color: #063462 !important;
 }

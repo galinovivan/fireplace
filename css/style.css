@@ -10089,6 +10089,7 @@ html.poor_vision i {
 html.poor_vision div,
 html.poor_vision a {
   background: none !important;
+  box-shadow: none !important;
 }
 html.poor_vision h1,
 html.poor_vision h2,
@@ -10098,7 +10099,8 @@ html.poor_vision h5,
 html.poor_vision p,
 html.poor_vision span,
 html.poor_vision a,
-html.poor_vision li {
+html.poor_vision li,
+html.poor_vision input {
   color: #101010 !important;
   text-shadow: none !important;
 }
@@ -10127,6 +10129,17 @@ html.poor_vision .col-md-11,
 html.poor_vision .col-md-12 {
   width: auto !important;
   float: none !important;
+}
+html.poor_vision form {
+  padding: 30px !important;
+  border: 1px solid #101010 !important;
+}
+html.poor_vision form input {
+  border: 1px solid #101010 !important;
+  background: none !important;
+}
+html.poor_vision #map {
+  display: none !important;
 }
 .btn_hov {
   -webkit-transition: all 0.4s;
@@ -15182,6 +15195,9 @@ html.poor_vision body.large_size h3 {
 html.poor_vision body.large_size h2 {
   font-size: 64px !important;
 }
+html.poor_vision body.large_size h4 {
+  font-size: 36px !important;
+}
 .btn_hov {
   -webkit-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -20235,8 +20251,10 @@ html.poor_vision body.black_body a,
 html.poor_vision body.black_body li {
   color: #ffffff !important;
 }
-html.poor_vision body.blue_body {
-  background: #9dd1ff;
+html.poor_vision body.blue_body,
+html.poor_vision body form,
+html.poor_vision body .modal {
+  background: #9dd1ff !important;
 }
 html.poor_vision body h1,
 html.poor_vision body h2,
@@ -20246,7 +20264,8 @@ html.poor_vision body h5,
 html.poor_vision body p,
 html.poor_vision body span,
 html.poor_vision body a,
-html.poor_vision body li {
+html.poor_vision body li,
+html.poor_vision body input {
   color: #063462 !important;
 }
 html.normal body.main_body .page_header {
