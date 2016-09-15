@@ -1,0 +1,22 @@
+@import "varibles";
+@import "mixin";
+@import "base";
+
+html {
+  &.poor_vision {
+    body {
+      &.black_body {
+        background: @black;
+        h1,h2,h3,h4,h5,p,span,a,li {
+          color: @white !important;
+        }
+      }
+      &.blue_body {
+        background: rgb(157, 209, 255);
+      }
+      h1,h2,h3,h4,h5,p,span,a,li {
+        color: rgb(6, 52, 98) !important;
+      }
+    }
+  }
+}

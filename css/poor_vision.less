@@ -26,14 +26,44 @@
 //    }
 //  }
 //}
-//html {
-//  &.poor_vision {
-//    .container-fluid {
-//      & > .row {
-//        & > div {
-//          border: 1px solid @black;
-//        }
-//      }
-//    }
-//  }
-//}
+html {
+  &.poor_vision {
+    .container-fluid {
+      & > .row {
+        & > div,a {
+          //border: 1px solid @black !important;
+          width: auto !important;
+        }
+      }
+    }
+    img {
+      display: none !important;
+    }
+    i {
+      display: none !important;
+    }
+    div, a {
+      background: none !important;
+    }
+    h1,h2,h3,h4,h5,p,span,a,li {
+      color: @black !important;
+    text-shadow: none !important;
+    }
+    a {
+      text-decoration: underline !important;
+      border: none !important;
+    }
+    li {
+      border: 1px solid @black !important;
+    }
+    div,a {
+      border-color: @black !important;
+    }
+    .col-md-1,.col-md-2,.col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11,
+    .col-md-12 {
+      width: auto !important;
+      float: none !important;
+    }
+  }
+
+}

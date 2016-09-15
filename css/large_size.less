@@ -1,0 +1,28 @@
+@import "varibles";
+@import "mixin";
+@import "base";
+
+html {
+  &.poor_vision {
+    body {
+      &.large_size {
+        p
+         {
+          font-size: @baseFontSize * 2 !important;
+        }
+        span {
+          font-size: @baseFontSize * 1.7 !important;
+        }
+        a {
+          font-size: @baseFontSize * 2 !important;
+        }
+        h3 {
+          font-size: @h3_size * 2 !important;
+        }
+        h2 {
+          font-size: @h2_size * 2 !important;
+        }
+      }
+    }
+  }
+}
