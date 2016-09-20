@@ -885,9 +885,11 @@ html.poor_vision body.black_body a,
 html.poor_vision body.black_body li {
   color: #ffffff !important;
 }
-html.poor_vision body.blue_body,
-html.poor_vision body form,
-html.poor_vision body .modal {
+html.poor_vision body.blue_body {
+  background: #9dd1ff !important;
+}
+html.poor_vision body.blue_body .modal,
+html.poor_vision body.blue_body form {
   background: #9dd1ff !important;
 }
 html.poor_vision body h1,
