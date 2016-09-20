@@ -11676,7 +11676,7 @@ html.poor_vision .container-fluid > .row a {
   width: auto !important;
 }
 html.poor_vision img {
-  display: none !important;
+  visibility: hidden !important;
 }
 html.poor_vision i {
   display: none !important;
@@ -11685,6 +11685,9 @@ html.poor_vision div,
 html.poor_vision a {
   background: none !important;
   box-shadow: none !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  position: relative !important;
 }
 html.poor_vision h1,
 html.poor_vision h2,
@@ -11735,6 +11738,21 @@ html.poor_vision form input {
 }
 html.poor_vision #map {
   display: none !important;
+}
+html .carousel {
+  margin-top: 100px;
+}
+html .carousel .item {
+  height: auto !important;
+}
+html .carousel-caption {
+  top: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+}
+html footer {
+  background: transparent !important;
 }
 .btn_hov {
   -webkit-transition: all 0.4s;

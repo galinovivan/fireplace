@@ -31,13 +31,12 @@ html {
     .container-fluid {
       & > .row {
         & > div,a {
-          //border: 1px solid @black !important;
           width: auto !important;
         }
       }
     }
     img {
-      display: none !important;
+      visibility: hidden !important;
     }
     i {
       display: none !important;
@@ -45,6 +44,9 @@ html {
     div, a {
       background: none !important;
     box-shadow: none !important;
+      margin-left: auto !important;
+      margin-right: auto !important;
+      position: relative !important;
     }
     h1,h2,h3,h4,h5,p,span,a,li, input {
       color: @black !important;
@@ -77,5 +79,20 @@ html {
       display: none !important;
     }
   }
+  .carousel {
+    margin-top: 100px;
+    .item {
+      height: auto !important;
+    }
+  }
+  .carousel-caption {
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
 
+  }
+  footer {
+    background: transparent !important;
+  }
 }
