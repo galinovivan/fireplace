@@ -56,6 +56,18 @@ $(document).ready(function() {
         event.preventDefault();
     });
 
+    $('.contrast_btn').click(function(event) {
+        event.preventDefault(event);
+    });
+
+
+
+
+
+
+
+
+
     function toLargeSize() {
         var body = $('body');
         body.removeClass();
@@ -70,5 +82,11 @@ $(document).ready(function() {
     function toSmallSize() {
         var body = $('body');
         body.removeClass();
+    }
+    function changeBackground(colorClass) {
+        var body = $('body');
+        colorClass = $.cookie("color");
+        sizeClass = $.cookie("fonts");
+        body.addClass(colorClass);
     }
 });
