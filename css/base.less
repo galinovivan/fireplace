@@ -60,9 +60,7 @@ h4 {
   font-family: @mediumFont;
 }
 a {
-  &:hover {
-    text-decoration: none;
-  }
+  .text_hover();
 }
 .align_center {
   .align();
@@ -174,10 +172,28 @@ button {
   .align();
 }
 .section_capt {
+  position: relative;
   h1 {
     font-size: 45px;
     .align();
     margin-top: 0;
+  }
+  .return {
+    position: absolute;
+    right: 100px;
+    top: 10px;
+    i {
+      font-size: 25px;
+      padding-right: 15px;
+    }
+    span {
+      font-family: @mediumFont;
+      padding-top: 10px;
+    }
+    .text_hover();
+   @media screen and (max-width: 1500px) {
+     right: 80px;
+   }
   }
   .row {
     position: relative;
@@ -206,6 +222,14 @@ button {
       right: auto;
       left: 25px;
       top: 1%;
+    }
+    .return {
+      left: 5%;
+      right: auto;
+      i {
+        font-size: 45px;
+        color: @color-base;
+      }
     }
   }
   @media screen and (max-width: 450px) {

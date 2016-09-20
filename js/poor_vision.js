@@ -11,7 +11,4 @@ $(document).ready(function() {
             $('body').addClass('large_size');
         }
     }
-    var html = $('html');
-    var body = $('body');
-  
 });

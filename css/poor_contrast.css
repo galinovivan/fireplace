@@ -79,8 +79,20 @@ h4 {
   font-size: 18px;
   font-family: 'futuredemic';
 }
+a {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
 a:hover {
-  text-decoration: none;
+  color: #f6891f;
+  text-decoration: none !important;
+}
+a:hover {
+  color: #f6891f;
+  text-decoration: none !important;
 }
 .align_center {
   text-align: center;
@@ -510,6 +522,7 @@ button:focus {
   position: relative;
 }
 .section_capt {
+  position: relative;
   margin-top: 45px;
   margin-bottom: 40px;
   text-align: left;
@@ -518,6 +531,37 @@ button:focus {
   font-size: 45px;
   text-align: center;
   margin-top: 0;
+}
+.section_capt .return {
+  position: absolute;
+  right: 100px;
+  top: 10px;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.section_capt .return i {
+  font-size: 25px;
+  padding-right: 15px;
+}
+.section_capt .return span {
+  font-family: 'futuredemic';
+  padding-top: 10px;
+}
+.section_capt .return:hover {
+  color: #f6891f;
+  text-decoration: none !important;
+}
+.section_capt .return:hover {
+  color: #f6891f;
+  text-decoration: none !important;
+}
+@media screen and (max-width: 1500px) {
+  .section_capt .return {
+    right: 80px;
+  }
 }
 .section_capt .row {
   position: relative;
@@ -543,6 +587,14 @@ button:focus {
     right: auto;
     left: 25px;
     top: 1%;
+  }
+  .section_capt .return {
+    left: 5%;
+    right: auto;
+  }
+  .section_capt .return i {
+    font-size: 45px;
+    color: #f6891f;
   }
 }
 @media screen and (max-width: 450px) {
