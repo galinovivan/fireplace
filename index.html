@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="normal poor_vision">
+<html class="normal">
 <head>
     <meta charset="utf-8">
     <title>Главная</title>
@@ -13,7 +13,7 @@
     <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
     <script src="libs/jquery/jquery.cookie.js"></script>
 </head>
-<body class="main_body large_size">
+<body class="">
 <!--modal-->
 <div class="modal fade" id="callBackModal">
     <div class="modal-dialog modal-md">
@@ -36,7 +36,29 @@
     </div>
 </div>
 <!--end modal-->
-<header>
+<!-- poor panel -->
+<div class="poor_panel" id="poorPanel">
+    <a href="#" class="contrast_btn" id="black"></a>
+    <a href="#" class="contrast_btn" id="blue"></a>
+    <a href="#" class="contrast_btn" id="white"></a>
+    <a href="#" class="resize_btn active" id="smallSize">
+       A
+    </a>
+    <a href="#" class="resize_btn" id="mediumSize">
+      A
+</a>
+    <a href="#" class="resize_btn" id="largeSize">
+        A
+    </a>
+    <a id="normalVision" href="#">Обычная версия</a>
+</div>
+ <div class="poor_btn">
+     <a id="poorVision" href="#">
+     <i class="fa fa-eye" aria-hidden="true"></i>
+         </a>
+ </div>
+<!-- // poor panel -->
+<header class="transparent_header">
 <div class="page_header">
     <div class="container-fluid">
         <div class="row">

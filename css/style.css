@@ -5137,7 +5137,7 @@ button:focus {
     margin-right: 10px;
   }
 }
-body.main_body .page_header {
+body .transparent_header .page_header {
   position: absolute;
   top: 50px;
   left: 0;
@@ -5147,13 +5147,50 @@ body.main_body .page_header {
   border: none;
   padding: 0;
 }
-body.main_body .page_header h2 {
+body .transparent_header .page_header h2 {
   color: #ffffff;
 }
-body.main_body .page_header .top_nav ul li a {
+body .transparent_header .page_header .top_nav ul li a {
   color: #ffffff;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
 }
-body.main_body .page_header .top_contacts h3 {
+body .transparent_header .page_header .top_nav ul li a:hover {
+  color: #f6891f;
+  text-decoration: none !important;
+}
+body .transparent_header .page_header .top_nav ul li a:hover {
+  color: #f6891f;
+  text-decoration: none !important;
+}
+body .transparent_header .page_header .top_nav ul li a:hover {
+  color: #f6891f;
+  text-decoration: none !important;
+}
+body .transparent_header .page_header .top_nav ul li a:hover {
+  color: #f6891f;
+  text-decoration: none !important;
+}
+body .transparent_header .page_header .top_nav ul li a:hover {
+  color: #f6891f;
+  text-decoration: none !important;
+}
+body .transparent_header .page_header .top_nav ul li a:hover {
+  color: #f6891f;
+  text-decoration: none !important;
+}
+body .transparent_header .page_header .top_nav ul li a:hover {
+  color: #f6891f;
+  text-decoration: none !important;
+}
+body .transparent_header .page_header .top_nav ul li a:hover {
+  color: #f6891f;
+  text-decoration: none !important;
+}
+body .transparent_header .page_header .top_contacts h3 {
   color: #ffffff;
 }
 .page_header {
@@ -11674,9 +11711,6 @@ button:focus {
 html.poor_vision img {
   visibility: hidden !important;
 }
-html.poor_vision i {
-  display: none !important;
-}
 html.poor_vision div,
 html.poor_vision a {
   background: none !important;
@@ -11712,7 +11746,8 @@ html.poor_vision form {
   padding: 30px !important;
   border: 1px solid #101010 !important;
 }
-html.poor_vision form input {
+html.poor_vision form input,
+html.poor_vision form textarea {
   border: 1px solid #101010 !important;
   background: none !important;
 }
@@ -11739,6 +11774,84 @@ html.poor_vision .poor_none {
 html.poor_vision form,
 html.poor_vision .modal {
   background: #ffffff !important;
+}
+.poor_btn {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000000000;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+}
+.poor_btn.black i {
+  color: #101010;
+}
+.poor_btn i {
+  color: #ffffff;
+  font-size: 50px;
+}
+.poor_panel {
+  position: fixed;
+  right: 50px;
+  top: 0;
+  z-index: 1000000000;
+  cursor: pointer;
+}
+.poor_panel a {
+  text-decoration: underline;
+}
+.poor_panel a#normalVision {
+  font-size: 30px !important;
+}
+.poor_panel #smallSize {
+  font-size: 19px !important;
+}
+.poor_panel #mediumSize {
+  font-size: 26px !important;
+}
+.poor_panel #largeSize {
+  font-size: 35px !important;
+}
+.poor_panel .resize_btn {
+  text-decoration: none !important;
+}
+.poor_panel .resize_btn.active {
+  text-decoration: underline !important;
+}
+.poor_panel .contrast_btn {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.poor_panel .contrast_btn#black {
+  background: #101010 !important;
+}
+.poor_panel .contrast_btn#blue {
+  background: #9dd1ff !important;
+}
+.poor_panel .contrast_btn#white {
+  background: #ffffff !important;
+  border: 1px solid #ebebeb !important;
+}
+html.poor_vision body.medium_size p {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size span {
+  font-size: 20.8px !important;
+}
+html.poor_vision body.medium_size a {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size h3 {
+  font-size: 30px !important;
+}
+html.poor_vision body.medium_size h2 {
+  font-size: 48px !important;
+}
+html.poor_vision body.medium_size h4 {
+  font-size: 27px !important;
 }
 .btn_hov {
   -webkit-transition: all 0.4s;

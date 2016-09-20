@@ -4,31 +4,34 @@
 //header
 
 
-  body.main_body {
-    .page_header {
-      position: absolute;
-      top: 50px;
-      left: 0;
-      width: 100%;
-      background: transparent;
-      z-index: 100;
-      border: none;
-      padding: 0;
-      h2 {
-        color: @white;
-      }
-      .top_nav {
-        ul {
-          li {
-            a {
-              color: @white;
+  body {
+    .transparent_header {
+      .page_header {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background: transparent;
+        z-index: 100;
+        border: none;
+        padding: 0;
+        h2 {
+          color: @white;
+        }
+        .top_nav {
+          ul {
+            li {
+              a {
+                color: @white;
+                .text_hover();
+              }
             }
           }
         }
-      }
-      .top_contacts {
-        h3 {
-          color: @white;
+        .top_contacts {
+          h3 {
+            color: @white;
+          }
         }
       }
     }
@@ -816,6 +819,7 @@
 
 //poor vision style
 @import "poor_vision";
+@import "medium_size";
 @import "large_size";
 @import "poor_contrast";
 

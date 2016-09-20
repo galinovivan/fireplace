@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="normal poor_vision">
+<html class="normal">
 <head>
     <meta charset="utf-8">
     <title>Контакты</title>
@@ -11,8 +11,9 @@
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
     <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+    <script src="libs/jquery/jquery.cookie.js"></script>
 </head>
-<body class="large_size blue_body">
+<body>
 <!--modal-->
 <div class="modal fade" id="callBackModal">
     <div class="modal-dialog modal-md">
@@ -35,6 +36,25 @@
     </div>
 </div>
 <!--end modal-->
+<!-- poor panel -->
+<div class="poor_panel" id="poorPanel">
+    <a href="#" class="resize_btn active" id="smallSize">
+        A
+    </a>
+    <a href="#" class="resize_btn" id="mediumSize">
+        A
+    </a>
+    <a href="#" class="resize_btn" id="largeSize">
+        A
+    </a>
+    <a id="normalVision" href="#">Обычная версия</a>
+</div>
+<div class="poor_btn black">
+    <a id="poorVision" href="#">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+    </a>
+</div>
+<!-- // poor panel -->
 <header>
     <div class="page_header">
         <div class="container-fluid">
@@ -258,13 +278,7 @@
         </div>
     </div>
 </footer>
- <script>
-     $('.document').ready(function() {
-        $('.grid').masontry({
-            initSelector: 'grid-item',
-        })
-     });
- </script>
 <script src="js/script.js"></script>
+<script src="js/poor_vision.js"></script>
 </body>
 </html>

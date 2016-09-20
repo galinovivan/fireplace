@@ -2,30 +2,7 @@
 @import "mixin";
 @import "base";
 
-//html {
-//  &.poor_vision {
-//    body {
-//      background: @;
-//    }
-//    div,
-//    a {
-//      background: none !important;
-//    }
-//    h1, h2, h3, h3, h5, a, p, span, li {
-//      color: @black !important;
-//    }
-//
-//    img {
-//      display: none !important;
-//    }
-//    a {
-//      border: 1px solid @black !important;
-//    }
-//    i {
-//      display: none !important;
-//    }
-//  }
-//}
+
 html {
   &.poor_vision {
     .container-fluid {
@@ -37,9 +14,6 @@ html {
     }
     img {
       visibility: hidden !important;
-    }
-    i {
-      display: none !important;
     }
     div, a {
       background: none !important;
@@ -70,7 +44,8 @@ html {
     form {
       padding: 30px !important;
       border: 1px solid @black !important;
-      input {
+      input,
+      textarea {
         border: 1px solid @black !important;
         background: none !important;
       }
@@ -111,6 +86,73 @@ html {
     }
     form, .modal {
       background: @white !important;
+    }
+  }
+}
+
+// poor panel
+.poor_btn {
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1000000000;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  &.black {
+    i {
+      color: @black;
+    }
+  }
+  i {
+    color: @white;
+    font-size: 50px;
+  }
+}
+.poor_panel {
+  position: fixed;
+  right: 50px;
+  top: 0;
+  z-index: 1000000000;
+  cursor: pointer;
+  @color: @black;
+  a {
+    text-decoration: underline;
+    &#normalVision {
+      font-size: 30px !important;
+    }
+  }
+  #smallSize {
+      font-size: @baseFontSize + 3 !important;
+  }
+  #mediumSize {
+      font-size: @h3_size + 6 !important;
+  }
+  #largeSize {
+    font-size: @h2_size + 3 !important;
+  }
+  .resize_btn {
+  text-decoration: none !important;
+    &.active {
+    text-decoration: underline !important;
+    }
+  }
+  #poorVision {
+  }
+  .contrast_btn {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    &#black {
+      background: @black !important;
+    }
+    &#blue {
+      background: rgb(157, 209, 255) !important;
+    }
+    &#white {
+      background: @white !important;
+      border: 1px solid @bord_color !important;
     }
   }
 }
