@@ -17,10 +17,7 @@ $(document).ready(function() {
     var storage = window.sessionStorage;
 
 
-if (!navigator.cookieEnabled) {
-    alert('');
-}
-    else {
+
 
     if (storage["poor_vision"] == "on") {
         poorBtn.hide();
@@ -83,7 +80,6 @@ if (!navigator.cookieEnabled) {
         toChangeTemp();
         event.preventDefault();
     });
-}
     // изменение шаблона
     function toChangeTemp() {
         var fonts = storage["fonts"];
@@ -96,7 +92,7 @@ if (!navigator.cookieEnabled) {
 
 
 // сохранить cookie
- 
+
 });
 
 
