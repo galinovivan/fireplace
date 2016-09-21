@@ -1,96 +1,102 @@
-$(document).ready(function() {
-    if ($.cookie("poor_vision") == "on") {
-       $('html').addClass('poor_vision');
-        $('#poorVision').hide();
-        $('#poorPanel').show();
-        if ($.cookie("fonts") == "small") {
-            toSmallSize();
-        }
-        if ($.cookie("fonts") == "medium") {
-            toMediumSize();
-        }
-        if ($.cookie("fonts") == "large") {
-           toLargeSize();
-        }
+"use strict"
 
-    } else if ($.cookie("poor_vision") == "off" ||  $.cookie("poor_vision") == undefined) {
-        $('#poorPanel').hide();
-        $('#poorVision').show();
-    }
+$(document).ready(function() {
     var htmlPage = $('html');
     var body = $('body');
+    var poorBtn = $('#poorVision');
+    var normalBtn = $('#normalVision');
+    var poorPanel = $('#poorPanel');
+    var resizeBtn = $('.resize_btn');
+    var colorBtn = $('.contrast_btn');
+    var largeSize = $('#largeSize');
+    var mediumSize = $('#mediumSize');
+    var smallSize = $('#smallSize');
+    var blueBtn = $('#blue');
+    var blackBtn = $('#black');
+    var whiteBtn = $('#white');
+    var storage = window.sessionStorage;
 
-    $('#poorVision').click(function(event) {
-            htmlPage.addClass('poor_vision');
-           $.cookie("poor_vision", "on");
-            $(this).hide();
-           $('#poorPanel').show();
-           event.preventDefault();
-    });
-    $('#normalVision').click(function(event) {
+
+if (!navigator.cookieEnabled) {
+    alert('');
+}
+    else {
+
+    if (storage["poor_vision"] == "on") {
+        poorBtn.hide();
+        poorPanel.show();
+        htmlPage.addClass('poor_vision');
+        toChangeTemp();
+    }
+    else if (storage["poor_vision"] == "off" || storage["poor_vision"] == undefined) {
+        poorPanel.hide();
+        poorBtn.show();
         htmlPage.removeClass('poor_vision');
-        $.cookie("poor_vision", "off");
-        $('#poorPanel').hide();
-        $('#poorVision').show();
+    }
+
+    poorBtn.click(function (event) {
+        htmlPage.addClass('poor_vision');
+        storage.setItem("poor_vision", "on");
+        $(this).hide();
+        poorPanel.show();
         event.preventDefault();
     });
-    $('#largeSize').click(function(event) {
-        $.cookie("fonts", "large");
-       toLargeSize();
-        event.preventDefault();
-    });
-    $('#mediumSize').click(function(event) {
-        $.cookie("fonts", "medium");
-        toMediumSize();
+    normalBtn.click(function (event) {
+        htmlPage.removeClass('poor_vision');
+        storage.setItem("poor_vision", "off");
+        poorPanel.hide();
+        poorBtn.show();
         event.preventDefault();
     });
 
-    $('#smallSize').click(function(event) {
-        $.cookie("fonts", "small");
-        toSmallSize();
-        event.preventDefault();
+
+    largeSize.click(function () {
+        storage.setItem("fonts", "large_size");
+    });
+    mediumSize.click(function () {
+        storage.setItem("fonts", "medium_size");
+    });
+    smallSize.click(function () {
+        storage.setItem("fonts", "small_size");
     });
 
-    $('.resize_btn').click(function(event) {
-       $('.resize_btn').removeClass('active');
+    blackBtn.click(function () {
+        storage.setItem("color", "black_body");
+    });
+    blueBtn.click(function () {
+        storage.setItem("color", "blue_body");
+    });
+    whiteBtn.click(function () {
+        storage.setItem("color", "white_body");
+    });
+
+
+    resizeBtn.click(function (event) {
+        resizeBtn.removeClass('active');
         $(this).addClass('active');
+        toChangeTemp();
         event.preventDefault();
     });
-
-    $('.contrast_btn').click(function(event) {
-        $('.contrast_btn').removeClass('active');
+    colorBtn.click(function (event) {
+        colorBtn.removeClass('active');
         $(this).addClass('active');
-        event.preventDefault(event);
-        alert($.cookie("fonts"));
+        toChangeTemp();
+        event.preventDefault();
     });
-
-
-
-
-
-
-
-
-
-    function toLargeSize() {
-        var body = $('body');
+}
+    // изменение шаблона
+    function toChangeTemp() {
+        var fonts = storage["fonts"];
+        var color = storage["color"];
         body.removeClass();
-        body.addClass('large_size');
+        body.addClass(fonts);
+        body.addClass(color);
     }
-    function toMediumSize() {
-        var body = $('body');
-        body.removeClass();
-        body.addClass('medium_size');
-    }
+// получить cookie
 
-    function toSmallSize() {
-        var body = $('body');
-        body.removeClass();
-    }
-    function changeBackground(colorClass) {
-        var body = $('body');
-        colorClass = $.cookie("color");
-        sizeClass = $.cookie("fonts");
-        body.addClass(colorClass);
-    }
+
+// сохранить cookie
+ 
 });
+
+
