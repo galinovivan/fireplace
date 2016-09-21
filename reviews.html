@@ -11,7 +11,6 @@
     <script src="libs/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
     <script src="https://unpkg.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
-    <script src="libs/jquery/jquery.cookie.js"></script>
 </head>
 <body>
 <!--modal-->
@@ -35,9 +34,11 @@
         </div>
     </div>
 </div>
-<!--end modal-->
 <!-- poor panel -->
 <div class="poor_panel" id="poorPanel">
+    <a href="#" class="contrast_btn" id="black"></a>
+    <a href="#" class="contrast_btn" id="blue"></a>
+    <a href="#" class="contrast_btn" id="white"></a>
     <a href="#" class="resize_btn active" id="smallSize">
         A
     </a>
@@ -55,6 +56,7 @@
     </a>
 </div>
 <!-- // poor panel -->
+<!--end modal-->
 <header>
     <div class="page_header">
         <div class="container-fluid">
@@ -71,19 +73,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7 col-lg-5 top_nav col-xs-12 col-sm-12">
+                <div class="col-md-7 col-lg-5 top_nav col-xs-12 col-sm-12 poor_full_width">
                     <ul class="list_inline" id="topNav">
                         <li><a href="about.html" class="up">О компании</a></li>
-                        <li><a href="catalog.html" class="up">Каталог</a></li>
+                        <li><a href="catalog.html" class="up active">Каталог</a></li>
                         <li><a href="news.html" class="up">Новости</a></li>
-                        <li><a href="reviews.html" class="up active">Отзывы</a></li>
+                        <li><a href="reviews.html" class="up">Отзывы</a></li>
                         <li><a href="gallery.html" class="up">Галерея</a></li>
                         <li><a href="contacts.html" class="up">Контакты</a></li>
                         <li class="visible-xs visible-sm" id="navClose"><i class="fa fa-close"></i></li>
                     </ul>
                 </div>
 
-                <div class="col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-1 hidden-xs hidden-sm">
+                <div class="col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-1 hidden-xs hidden-sm poor_full_width">
                     <div class="row">
                         <div class="col-md-6 top_contacts">
                             <h3>+7(812)123-45-67</h3>
@@ -137,7 +139,7 @@
             </div>
         </div>
     <div class="grid clearfix">
-            <div class="grid-item height-1 review_item">
+            <div class="grid-item height-1 review_item poor_height_auto">
                 <div class="char">
                     <img src="img/char.png">
                 </div>
@@ -155,7 +157,7 @@
                     </div>
                 </div>
             </div>
-            <div class="grid-item height-2 review_item">
+            <div class="grid-item height-2 review_item poor_height_auto">
                 <div class="char">
                     <img src="img/char.png">
                 </div>
@@ -173,7 +175,7 @@
                     </div>
                 </div>
             </div>
-            <div class="grid-item height-1 review_item">
+            <div class="grid-item height-1 review_item poor_height_auto">
                 <div class="char">
                     <img src="img/char.png">
                 </div>
@@ -190,7 +192,7 @@
                     </div>
                 </div>
             </div>
-            <div class="grid-item height-2 review_item">
+            <div class="grid-item height-2 review_item poor_height_auto">
                 <div class="char">
                     <img src="img/char.png">
                 </div>

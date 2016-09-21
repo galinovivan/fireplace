@@ -4858,8 +4858,10 @@ button:focus {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-.mobile_full_width {
-  padding: 0;
+@media screen and (max-width: 991px) {
+  .mobile_full_width {
+    padding: 0;
+  }
 }
 @media screen and (max-width: 1500px) {
   body {
@@ -11429,8 +11431,10 @@ button:focus {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-.mobile_full_width {
-  padding: 0;
+@media screen and (max-width: 991px) {
+  .mobile_full_width {
+    padding: 0;
+  }
 }
 @media screen and (max-width: 1500px) {
   body {
@@ -11764,6 +11768,10 @@ html.poor_vision .poor_full_width {
 html.poor_vision .poor_padding {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+html.poor_vision .poor_padding_y {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 html.poor_vision .poor_height_auto {
   height: auto !important;
@@ -16713,8 +16721,10 @@ button:focus {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-.mobile_full_width {
-  padding: 0;
+@media screen and (max-width: 991px) {
+  .mobile_full_width {
+    padding: 0;
+  }
 }
 @media screen and (max-width: 1500px) {
   body {
@@ -21870,8 +21880,10 @@ button:focus {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-.mobile_full_width {
-  padding: 0;
+@media screen and (max-width: 991px) {
+  .mobile_full_width {
+    padding: 0;
+  }
 }
 @media screen and (max-width: 1500px) {
   body {

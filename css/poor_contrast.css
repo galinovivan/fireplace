@@ -766,8 +766,10 @@ button:focus {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-.mobile_full_width {
-  padding: 0;
+@media screen and (max-width: 991px) {
+  .mobile_full_width {
+    padding: 0;
+  }
 }
 @media screen and (max-width: 1500px) {
   body {
