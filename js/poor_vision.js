@@ -57,6 +57,8 @@ $(document).ready(function() {
     });
 
     $('.contrast_btn').click(function(event) {
+        $('.contrast_btn').removeClass('active');
+        $(this).addClass('active');
         event.preventDefault(event);
     });
 
