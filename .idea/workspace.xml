@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4e330006-2dd9-4711-bb6b-b36cb3f63a5c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/catalog.html" afterPath="$PROJECT_DIR$/catalog.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/poor_vision.js" afterPath="$PROJECT_DIR$/js/poor_vision.js" />
     </list>
     <ignored path="fireplace.iws" />
@@ -94,8 +95,8 @@
       <file leaf-file-name="catalog.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/catalog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
+            <state relative-caret-position="210">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding>
                 <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -108,8 +109,8 @@
       <file leaf-file-name="poor_vision.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/poor_vision.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-405">
-              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            <state relative-caret-position="300">
+              <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -161,12 +162,12 @@
         <option value="$PROJECT_DIR$/item_list.html" />
         <option value="$PROJECT_DIR$/item.html" />
         <option value="$PROJECT_DIR$/gallery.html" />
-        <option value="$PROJECT_DIR$/catalog.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.less" />
         <option value="$PROJECT_DIR$/css/style.less" />
         <option value="$PROJECT_DIR$/css/poor_vision.less" />
+        <option value="$PROJECT_DIR$/catalog.html" />
         <option value="$PROJECT_DIR$/js/poor_vision.js" />
       </list>
     </option>
@@ -318,12 +319,12 @@
       <workItem from="1474274891621" duration="13798000" />
       <workItem from="1474303039634" duration="152000" />
       <workItem from="1474370516091" duration="14843000" />
-      <workItem from="1474442699931" duration="205000" />
+      <workItem from="1474442699931" duration="1649000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84569000" />
+    <option name="totallyTimeSpent" value="86013000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="951" extended-state="6" />
@@ -615,6 +616,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1050">
           <caret line="262" column="0" selection-start-line="262" selection-start-column="0" selection-end-line="262" selection-end-column="0" />
+          <folding>
+            <marker date="1474387879000" expanded="true" signature="9:152" ph="{...}" />
+            <marker date="1474387879000" expanded="true" signature="168:237" ph="{...}" />
+            <marker date="1474387879000" expanded="true" signature="247:390" ph="{...}" />
+            <marker date="1474387879000" expanded="true" signature="743:782" ph="{...}" />
+            <marker date="1474387879000" expanded="true" signature="788:900" ph="{...}" />
+            <marker date="1474387879000" expanded="true" signature="908:1034" ph="{...}" />
+            <marker date="1474387879000" expanded="true" signature="1087:1120" ph="{...}" />
+            <marker date="1474387879000" expanded="true" signature="1124:1146" ph="{...}" />
+            <marker date="1474387879000" expanded="true" signature="1150:1172" ph="{...}" />
+            <marker date="1474387879000" expanded="true" signature="1176:1226" ph="{...}" />
+            <marker date="1474387879000" expanded="true" signature="1230:1252" ph="{...}" />
+            <marker date="1474387879000" expanded="true" signature="1256:1308" ph="{...}" />
+            <marker date="1474387879000" expanded="true" signature="478695:478700" ph="{...}" />
+            <marker date="1474387879000" expanded="true" signature="478695:478702" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -657,18 +674,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/catalog.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="50" column="26" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="26" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -742,10 +747,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/catalog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/poor_vision.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-405">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="300">
+          <caret line="25" column="27" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
           <folding />
         </state>
       </provider>

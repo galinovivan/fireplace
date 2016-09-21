@@ -12,6 +12,7 @@ $(document).ready(function() {
         if ($.cookie("fonts") == "large") {
            toLargeSize();
         }
+
     } else if ($.cookie("poor_vision") == "off" ||  $.cookie("poor_vision") == undefined) {
         $('#poorPanel').hide();
         $('#poorVision').show();
@@ -60,6 +61,7 @@ $(document).ready(function() {
         $('.contrast_btn').removeClass('active');
         $(this).addClass('active');
         event.preventDefault(event);
+        alert($.cookie("fonts"));
     });
 
 
