@@ -11780,6 +11780,14 @@ html.poor_vision form,
 html.poor_vision .modal {
   background: #ffffff !important;
 }
+html.poor_vision .img_off img,
+html.poor_vision .img_off i {
+  visibility: hidden !important;
+}
+html.poor_vision .img_on img,
+html.poor_vision .img_on i {
+  visibility: visible !important;
+}
 .poor_btn {
   display: block;
   position: fixed;
@@ -11840,14 +11848,6 @@ html.poor_vision .modal {
   background: #ffffff !important;
   border: 1px solid #ebebeb !important;
 }
-.img_off img,
-.img_off i {
-  visibility: hidden !important;
-}
-.img_on img,
-.img_on i {
-  visibility: visible !important;
-}
 html.poor_vision body.medium_size p {
   font-size: 24px !important;
 }
@@ -11865,6 +11865,106 @@ html.poor_vision body.medium_size h2 {
 }
 html.poor_vision body.medium_size h4 {
   font-size: 27px !important;
+}
+html.poor_vision body.medium_size input,
+html.poor_vision body.medium_size textarea {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input::-webkit-input-placeholder,
+html.poor_vision body.medium_size textarea::-webkit-input-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input::-webkit-input-placeholder,
+html.poor_vision body.medium_size textarea::-webkit-input-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input::-webkit-input-placeholder,
+html.poor_vision body.medium_size textarea::-webkit-input-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input::-webkit-input-placeholder,
+html.poor_vision body.medium_size textarea::-webkit-input-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input::-webkit-input-placeholder,
+html.poor_vision body.medium_size textarea::-webkit-input-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input::-webkit-input-placeholder,
+html.poor_vision body.medium_size textarea::-webkit-input-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input::-webkit-input-placeholder,
+html.poor_vision body.medium_size textarea::-webkit-input-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input::-webkit-input-placeholder,
+html.poor_vision body.medium_size textarea::-webkit-input-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input::-moz-placeholder,
+html.poor_vision body.medium_size textarea::-moz-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input:-moz-placeholder,
+html.poor_vision body.medium_size textarea:-moz-placeholder {
+  font-size: 16px !important;
+}
+html.poor_vision body.medium_size input::-moz-placeholder,
+html.poor_vision body.medium_size textarea::-moz-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input:-moz-placeholder,
+html.poor_vision body.medium_size textarea:-moz-placeholder {
+  font-size: 16px !important;
+}
+html.poor_vision body.medium_size input::-moz-placeholder,
+html.poor_vision body.medium_size textarea::-moz-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input:-moz-placeholder,
+html.poor_vision body.medium_size textarea:-moz-placeholder {
+  font-size: 16px !important;
+}
+html.poor_vision body.medium_size input::-moz-placeholder,
+html.poor_vision body.medium_size textarea::-moz-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input:-moz-placeholder,
+html.poor_vision body.medium_size textarea:-moz-placeholder {
+  font-size: 16px !important;
+}
+html.poor_vision body.medium_size input::-moz-placeholder,
+html.poor_vision body.medium_size textarea::-moz-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input:-moz-placeholder,
+html.poor_vision body.medium_size textarea:-moz-placeholder {
+  font-size: 16px !important;
+}
+html.poor_vision body.medium_size input::-moz-placeholder,
+html.poor_vision body.medium_size textarea::-moz-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input:-moz-placeholder,
+html.poor_vision body.medium_size textarea:-moz-placeholder {
+  font-size: 16px !important;
+}
+html.poor_vision body.medium_size input::-moz-placeholder,
+html.poor_vision body.medium_size textarea::-moz-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input:-moz-placeholder,
+html.poor_vision body.medium_size textarea:-moz-placeholder {
+  font-size: 16px !important;
+}
+html.poor_vision body.medium_size input::-moz-placeholder,
+html.poor_vision body.medium_size textarea::-moz-placeholder {
+  font-size: 24px !important;
+}
+html.poor_vision body.medium_size input:-moz-placeholder,
+html.poor_vision body.medium_size textarea:-moz-placeholder {
+  font-size: 16px !important;
 }
 .btn_hov {
   -webkit-transition: all 0.4s;
@@ -17024,6 +17124,10 @@ html.poor_vision body.large_size h2 {
 }
 html.poor_vision body.large_size h4 {
   font-size: 36px !important;
+}
+html.poor_vision body.large_size input,
+html.poor_vision body.large_size textarea {
+  font-size: 32px !important;
 }
 html.poor_vision body.large_size input::-webkit-input-placeholder,
 html.poor_vision body.large_size textarea::-webkit-input-placeholder {
@@ -22280,6 +22384,10 @@ html.poor_vision body.black_body .modal,
 html.poor_vision body.black_body form {
   background: #000000 !important;
 }
+html.poor_vision body.black_body input,
+html.poor_vision body.black_body textarea {
+  color: #ffffff !important;
+}
 html.poor_vision body.black_body input::-webkit-input-placeholder,
 html.poor_vision body.black_body textarea::-webkit-input-placeholder {
   color: #ffffff !important;
@@ -22375,6 +22483,11 @@ html.poor_vision body.black_body textarea::-moz-placeholder {
 html.poor_vision body.black_body input:-moz-placeholder,
 html.poor_vision body.black_body textarea:-moz-placeholder {
   color: #ffffff !important;
+}
+html.poor_vision body.black_body div,
+html.poor_vision body.black_body a,
+html.poor_vision body.black_body input {
+  border-color: #ffffff !important;
 }
 html.poor_vision body.blue_body {
   background: #9dd1ff !important;

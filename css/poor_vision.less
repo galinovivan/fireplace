@@ -89,6 +89,18 @@ html {
     form, .modal {
       background: @white !important;
     }
+    .img_off {
+      img,
+      i {
+        visibility: hidden !important;
+      }
+    }
+    .img_on {
+      img,
+      i {
+        visibility: visible !important;
+      }
+    }
   }
 }
 
@@ -156,17 +168,5 @@ html {
       background: @white !important;
       border: 1px solid @bord_color !important;
     }
-  }
-}
-.img_off {
-  img,
-  i {
-    visibility: hidden !important;
-  }
-}
-.img_on {
-  img,
-  i {
-    visibility: visible !important;
   }
 }

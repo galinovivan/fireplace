@@ -21,6 +21,12 @@ html {
         h4 {
           font-size: @h4_size * 1.5 !important;
         }
+        input,
+        textarea {
+          .placeholder_font_size(@baseFontSize * 1.5);
+          .moz_placeholder_font_size(@baseFontSize * 1.5);
+          font-size: @baseFontSize * 1.5 !important;
+        }
       }
     }
   }
