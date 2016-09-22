@@ -11712,9 +11712,6 @@ button:focus {
     margin-right: 10px;
   }
 }
-html.poor_vision img {
-  visibility: hidden !important;
-}
 html.poor_vision div,
 html.poor_vision a {
   background: none !important;
@@ -11842,6 +11839,14 @@ html.poor_vision .modal {
 .poor_panel .contrast_btn#white {
   background: #ffffff !important;
   border: 1px solid #ebebeb !important;
+}
+.img_off img,
+.img_off i {
+  visibility: hidden !important;
+}
+.img_on img,
+.img_on i {
+  visibility: visible !important;
 }
 html.poor_vision body.medium_size p {
   font-size: 24px !important;

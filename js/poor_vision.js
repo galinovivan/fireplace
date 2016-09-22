@@ -14,6 +14,7 @@ $(document).ready(function() {
     var blueBtn = $('#blue');
     var blackBtn = $('#black');
     var whiteBtn = $('#white');
+    var imgControl = $('#imgControl');
     var storage = window.sessionStorage;
 
 
@@ -43,6 +44,15 @@ $(document).ready(function() {
         storage.setItem("poor_vision", "off");
         poorPanel.hide();
         poorBtn.show();
+        event.preventDefault();
+    });
+    imgControl.click(function(event) {
+       if (storage["img"] !== "img_off") {
+           storage.setItem("img", "img_off");
+       } else {
+           storage.setItem("img", "img_on");
+       }
+        toChangeTemp();
         event.preventDefault();
     });
 
@@ -84,9 +94,11 @@ $(document).ready(function() {
     function toChangeTemp() {
         var fonts = storage["fonts"];
         var color = storage["color"];
+        var img = storage["img"];
         body.removeClass();
         body.addClass(fonts);
         body.addClass(color);
+        body.addClass(img);
     }
 });
 
