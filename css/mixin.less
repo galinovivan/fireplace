@@ -422,6 +422,33 @@
     font-size: @size;
   }
 }
+.placeholder_color(@color) {
+  &::-webkit-input-placeholder {
+    color: @color !important;
+  }
+}
+.moz_placeholder_color(@color) {
+  &::-moz-placeholder {
+    color: @color !important;
+  }
+  &:-moz-placeholder {
+  color: @color !important;
+  }
+}
+.placeholder_font_size(@size: @baseFontSize) {
+  &::-webkit-input-placeholder {
+    font-size: @size !important;
+  }
+}
+  .moz_placeholder_font_size(@size: @baseFontSize) {
+    &::-moz-placeholder {
+      font-size: @size !important;
+    }
+    &:-moz-placeholder {
+      font-size: @baseFontSize !important;
+    }
+  }
+
 .moz_placeholder_style(@color: @black, @size: 16px) {
   &::-moz-placeholder {
     color: @color;

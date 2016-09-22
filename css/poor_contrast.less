@@ -10,6 +10,14 @@ html {
         h1,h2,h3,h4,h5,p,span,a,li {
           color: @white !important;
         }
+        .modal, form {
+          background: rgb(0, 0, 0) !important;
+        }
+        input,
+        textarea {
+          .placeholder_color(@white);
+          .moz_placeholder_color(@white);
+        }
       }
       &.blue_body {
       background: rgb(157, 209, 255) !important;

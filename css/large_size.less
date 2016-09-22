@@ -25,6 +25,11 @@ html {
         h4 {
           font-size: @h4_size * 2 !important;
         }
+        input,
+        textarea {
+          .placeholder_font_size(@baseFontSize * 2);
+          .moz_placeholder_font_size(@baseFontSize * 2);
+        }
       }
     }
   }

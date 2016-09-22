@@ -887,6 +887,34 @@ html.poor_vision body.black_body a,
 html.poor_vision body.black_body li {
   color: #ffffff !important;
 }
+html.poor_vision body.black_body .modal,
+html.poor_vision body.black_body form {
+  background: #000000 !important;
+}
+html.poor_vision body.black_body input::-webkit-input-placeholder,
+html.poor_vision body.black_body textarea::-webkit-input-placeholder {
+  color: #ffffff !important;
+}
+html.poor_vision body.black_body input::-webkit-input-placeholder,
+html.poor_vision body.black_body textarea::-webkit-input-placeholder {
+  color: #ffffff !important;
+}
+html.poor_vision body.black_body input::-moz-placeholder,
+html.poor_vision body.black_body textarea::-moz-placeholder {
+  color: #ffffff !important;
+}
+html.poor_vision body.black_body input:-moz-placeholder,
+html.poor_vision body.black_body textarea:-moz-placeholder {
+  color: #ffffff !important;
+}
+html.poor_vision body.black_body input::-moz-placeholder,
+html.poor_vision body.black_body textarea::-moz-placeholder {
+  color: #ffffff !important;
+}
+html.poor_vision body.black_body input:-moz-placeholder,
+html.poor_vision body.black_body textarea:-moz-placeholder {
+  color: #ffffff !important;
+}
 html.poor_vision body.blue_body {
   background: #9dd1ff !important;
 }
