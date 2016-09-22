@@ -88,11 +88,6 @@ $(document).ready(function() {
         body.addClass(fonts);
         body.addClass(color);
     }
-// получить cookie
-
-
-// сохранить cookie
-
 });
 
 
