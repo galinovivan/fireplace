@@ -27,6 +27,6 @@ function initMap() {
         position: new google.maps.LatLng(latitude, longitude),
         map: map,
         icon: image,
-    });
+    }); 
 }
 

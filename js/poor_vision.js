@@ -1,19 +1,19 @@
 $(document).ready(function() {
-    var htmlPage = $('html');
-    var body = $('body');
-    var poorBtn = $('#poorVision');
-    var normalBtn = $('#normalVision');
-    var poorPanel = $('#poorPanel');
-    var resizeBtn = $('.resize_btn');
-    var colorBtn = $('.contrast_btn');
-    var largeSize = $('#largeSize');
-    var mediumSize = $('#mediumSize');
-    var smallSize = $('#smallSize');
-    var blueBtn = $('#blue');
-    var blackBtn = $('#black');
-    var whiteBtn = $('#white');
-    var imgControl = $('#imgControl');
-    var storage = window.sessionStorage;
+    var htmlPage = $('html'),
+        body = $('body'),
+        poorBtn = $('#poorVision'),
+        normalBtn = $('#normalVision'),
+        poorPanel = $('#poorPanel'),
+        resizeBtn = $('.resize_btn'),
+        colorBtn = $('.contrast_btn'),
+        largeSize = $('#largeSize'),
+        mediumSize = $('#mediumSize'),
+        smallSize = $('#smallSize'),
+        blueBtn = $('#blue'),
+        blackBtn = $('#black'),
+        whiteBtn = $('#white'),
+        imgControl = $('#imgControl'),
+        storage = window.sessionStorage;
 
 
 
