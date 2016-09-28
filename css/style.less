@@ -673,8 +673,14 @@
           }
         }
       }
+      .bord_row {
+        border: 1px solid @bord_color;
+        border-bottom: none;
+      }
       .item_option {
-        margin-top: 100px;
+        padding-top: 100px;
+        padding-left: 5%;
+        border-left: 1px solid @bord_color;
         .price {
           h2 {
             font-size: @h2_larg;
@@ -701,6 +707,9 @@
             padding-top: 20px;
           }
         }
+        .item_btn {
+          padding: 0;
+        }
       }
       @media screen and (max-width: 991px) {
         #itemCarousel {
@@ -726,7 +735,11 @@
             }
           }
         }
+        .item_preview {
+          border: none !important;
+        }
         .item_option {
+          border: none !important;
           .price {
             background: @backgroundGray;
             border: 1px solid @bord_color;
