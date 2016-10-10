@@ -1,4 +1,4 @@
-@import "varibles";
+
 
 .align(@align: center) {
   text-align: @align;
@@ -405,10 +405,25 @@
       width: 100%;
       padding: 17px;
     }
+    input:not([type="submit"]),
+    textarea {
+      .placeholder_style(@black, @h3_size);
+      .moz_placeholder_style(@black, @h3_size);
+    }
   }
 }
 .placeholder_style(@color: @black, @size: 16px) {
   &::-webkit-input-placeholder {
+    color: @color;
+    font-size: @size;
+  }
+}
+.moz_placeholder_style(@color: @black; @size: 16px) {
+  &::-moz-placeholder {
+    color: @color;
+    font-size: @size;
+  }
+  &:-moz-placeholder {
     color: @color;
     font-size: @size;
   }
