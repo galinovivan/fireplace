@@ -181,6 +181,11 @@ button {
 .base_form {
   .light_form();
   .margin_align();
+  input:not([type="submit"]),
+  textarea {
+    .placeholder_style(@black, 18px);
+    .moz_placeholder_style(@black, 18px);
+  }
 }
 .background_gray {
   background: @backgroundGray;
@@ -209,6 +214,9 @@ button {
     position: relative;
   }
   .align();
+  h2 {
+    font-size: @h2_larg;
+  }
   @media screen and (max-width: 991px) {
     h2 {
       font-size: @h2_larg;
@@ -217,6 +225,9 @@ button {
 }
 .section_capt {
   position: relative;
+  @media screen and (min-width: 991px) {
+    padding-right: 160px;
+  }
   h1 {
     font-size: 45px;
     .align();
@@ -224,7 +235,7 @@ button {
   }
   .return {
     position: absolute;
-    right: 100px;
+    right: 0;
     top: 10px;
     i {
       font-size: 25px;
@@ -238,7 +249,6 @@ button {
     }
     .text_hover();
    @media screen and (max-width: 1500px) {
-     right: 80px;
    }
   }
   .row {
@@ -264,6 +274,9 @@ button {
     }
   }
   @media screen and (max-width: 991px) {
+    &.pd {
+      padding-left: 50px;
+    }
     .back_link {
       right: auto;
       left: 25px;
@@ -378,6 +391,20 @@ button {
     }
     .arrow_right {
       margin-right: 10px;
+    }
+  }
+}
+
+
+@media screen and (max-width: 991px) {
+  .item_page {
+    .item_btn {
+      margin-top: 25px;
+      a {
+        &.btn_base {
+          padding: 26px;
+        }
+      }
     }
   }
 }
