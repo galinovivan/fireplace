@@ -347,7 +347,17 @@ button {
     }
     //background: @text_color_base url('../img/cart_btn.png') no-repeat 20% center;
   }
+  &.btn_pencil {
+    padding: 10px;
+    background: @text_color_base url('../img/btn_pencil.png') no-repeat 10% center;
+    color: @white;
+    .btn_darken(@text_color_base, 5%);
+  }
+  &.medium {
+    width: 250px !important;
+  }
 }
+
 .grid_5 {
   width: 20%;
   float: left;

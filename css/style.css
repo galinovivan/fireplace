@@ -651,13 +651,29 @@ button:focus {
   transition: all 0.4s;
 }
 .btn_circle.btn_cart:hover {
-  background: #e04b17;
+  background-color: #e04b17;
 }
 .btn_circle.btn_cart * {
   margin-right: 10px;
 }
 .btn_circle.btn_cart i {
   font-size: 25px;
+}
+.btn_circle.btn_pencil {
+  padding: 10px;
+  background: #e95927 url('../img/btn_pencil.png') no-repeat 10% center;
+  color: #ffffff;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.btn_circle.btn_pencil:hover {
+  background-color: #e04b17;
+}
+.btn_circle.medium {
+  width: 250px !important;
 }
 .grid_5 {
   width: 20%;
@@ -1089,7 +1105,13 @@ body .transparent_header .page_header .top_contacts h3 {
   -moz-box-shadow: 0 0 0 2px #f6891f;
   -o-box-shadow: 0 0 0 2px #f6891f;
 }
-.page_header .top_nav ul li a.active {
+.page_header .top_nav ul li.active {
+  box-shadow: 0 0 0 1px #f6891f;
+  -webkit-box-shadow: 0 0 0 1px #f6891f;
+  -moz-box-shadow: 0 0 0 1px #f6891f;
+  -o-box-shadow: 0 0 0 1px #f6891f;
+}
+.page_header .top_nav ul li.active a {
   color: #f6891f;
 }
 @media screen and (max-width: 1620px) {
@@ -1947,6 +1969,74 @@ main .item_btn {
 main .item_btn a.btn_base {
   height: 70px;
   padding: 20px;
+}
+main .order_form {
+  margin-bottom: 100px;
+}
+main .order_form .form_heading {
+  background: #fdf7ef;
+  padding: 30px 0;
+}
+main .order_form h3 {
+  font-family: 'future_book';
+}
+main .order_form .form_wrapper {
+  padding: 0 0 50px 0;
+}
+main .order_form .form_wrapper form {
+  padding-top: 50px;
+}
+main .order_form .form_wrapper input:not(.input_inline),
+main .order_form .form_wrapper textarea {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}
+main .order_form .form_wrapper input:not([type="submit"]),
+main .order_form .form_wrapper textarea {
+  background: transparent;
+  border-top: none;
+  border-left: 0;
+  border-right: 0;
+  border-color: #101010;
+  margin-bottom: 50px;
+}
+main .order_form .form_wrapper input:not([type="submit"])::-webkit-input-placeholder,
+main .order_form .form_wrapper textarea::-webkit-input-placeholder {
+  color: #101010;
+  font-size: 19px;
+}
+main .order_form .form_wrapper input:not([type="submit"])::-moz-placeholder,
+main .order_form .form_wrapper textarea::-moz-placeholder {
+  color: #101010;
+  font-size: 19px;
+}
+main .order_form .form_wrapper input:not([type="submit"]):-moz-placeholder,
+main .order_form .form_wrapper textarea:-moz-placeholder {
+  color: #101010;
+  font-size: 19px;
+}
+main .order_form .form_wrapper input:not([type="submit"])::-moz-placeholder,
+main .order_form .form_wrapper textarea::-moz-placeholder {
+  color: #101010;
+  font-size: 19px;
+}
+main .order_form .form_wrapper input:not([type="submit"]):-moz-placeholder,
+main .order_form .form_wrapper textarea:-moz-placeholder {
+  color: #101010;
+  font-size: 19px;
+}
+main .order_form .form_wrapper input:not([type="submit"]).input_inline,
+main .order_form .form_wrapper textarea.input_inline {
+  width: 37.5%;
+}
+main .order_form .form_wrapper input:not([type="submit"]).input_inline.first,
+main .order_form .form_wrapper textarea.input_inline.first {
+  margin-right: 2.5%;
+}
+main .order_form .form_wrapper input:not([type="submit"]).input_inline.second,
+main .order_form .form_wrapper textarea.input_inline.second {
+  margin-left: 2.5%;
 }
 footer {
   padding: 85px 0 85px 0;
