@@ -88,10 +88,16 @@
     text-decoration: none !important;
   }
 }
-.btn_hov {
+.btn_darken(@color: @color-base, @perc: 5%) {
   .transition();
   &:hover {
-    background: lighten(@color-base, 10%);
+    background: darken(@color, @perc);
+  }
+}
+.btn_hov(@color: @color-base) {
+  .transition();
+  &:hover {
+    background: lighten(@color, 10%);
     color: @white;
     text-decoration: none;
   }
@@ -111,6 +117,12 @@
   -webkit-box-shadow: @properties;
   -moz-box-shadow: @properties;
   -o-box-shadow: @properties;
+}
+.shadow_more(@shadow_first, @shadow_second) {
+  box-shadow: @shadow_first, @shadow_second;
+  -webkit-box-shadow: @shadow_first, @shadow_second;
+  -moz-box-shadow: @shadow_first, @shadow_second;
+  -o-box-shadow: @shadow_first, @shadow_second;
 }
 
 .go_filter(@properties) {

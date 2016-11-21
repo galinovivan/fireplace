@@ -27,7 +27,6 @@
             li {
               a {
                 color: @white;
-                .text_hover();
               }
             }
           }
@@ -91,14 +90,10 @@
             font-family: @mediumFont;
             &:hover {
               text-decoration: none !important;
-              color: @color-base;
+              .shadow(0 0 0 2px @color-base);
             }
             &.active {
               color: @color-base;
-              &:hover {
-                border-color: @color-base;
-              }
-
             }
           }
         }
@@ -122,6 +117,15 @@
       @media screen and (max-width: 1500px) {
         h3 {
           font-size: @baseFontSize - 2;
+        }
+      }
+    }
+    .header_cart {
+      padding-top: 15px;
+      .media-body {
+        vertical-align: middle;
+        span {
+          font-size: 16px;
         }
       }
     }
@@ -240,6 +244,9 @@
               font-size: @h1_size - 20;
               font-family: @mediumFont;
             }
+          }
+          &:nth-of-type(2) {
+            .cover('../img/carousel_item_2.png');
           }
         }
         .carousel-indicators {
@@ -471,6 +478,7 @@
         border: 1px solid @bord_color;
         margin-left: -1px;
         height: 450px;
+        .transition();
         .align();
         .goods_img {
           height: 300px;
@@ -486,8 +494,43 @@
             color: @text_color_base;
           }
         }
+        .goods_price {
+        }
         .fa-ruble {
           font-size: @baseFontSize + 5;
+        }
+        .hidden_block {
+          opacity: 0;
+          position: absolute;
+          bottom: -108px;
+          margin-left: -1px;
+          width: 100.6%;
+          z-index: 100;
+          border: 1px solid @bord_color;
+          background: @white;
+          padding-bottom: 50px;
+          .transform(scale(0));
+          .shadow_more(0 0 0 1px @color-base, 0 5px 6px 5px @bord_color);
+          .transition(opacity, .3s);
+          &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            background: @white;
+            position: absolute;
+            //border: 1px solid red;
+            height: 5px;
+            top: -4px;
+            background: @white;
+            z-index: 1000;
+          }
+        }
+        &:hover {
+          .shadow_more(0 0 0 1px @color-base, 0 0 6px 5px @bord_color);
+          .hidden_block {
+            opacity: 1;
+            .transform(scale(1));
+          }
         }
       }
       .btn_circle {

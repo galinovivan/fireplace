@@ -46,6 +46,9 @@ footer {
     padding-bottom: 350px;
   }
 }
+.white_text {
+  color: @white;
+}
 h1,
 h2,
 h3 {
@@ -330,6 +333,19 @@ button {
   @media screen and (max-width: 991px) {
     width: 60%;
     min-width: 200px;
+  }
+  &.btn_cart {
+    background: @text_color_base;
+    color: @white;
+    padding: 10px;
+    .btn_darken(@text_color_base, 5%);
+    * {
+      margin-right: 10px;
+    }
+    i {
+      font-size: 25px;
+    }
+    //background: @text_color_base url('../img/cart_btn.png') no-repeat 20% center;
   }
 }
 .grid_5 {
