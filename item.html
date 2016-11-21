@@ -15,28 +15,6 @@
     <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
 </head>
 <body>
-<!--modal-->
-<div class="modal fade" id="callBackModal">
-    <div class="modal-dialog modal-md">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" data-dismiss="modal" aria-hidden="true" class="close" style="opacity: 1;"><img src="img/modal_close.png" alt="close"></button>
-                <h2 class="up modal-title">ЗАЯВКА</h2>
-
-            </div>
-            <div class="modal-body">
-                <form method="post" id="callBackForm">
-                    <input type="text" name="name" placeholder="Как вас зовут?" required>
-                    <input type="text" name="user_contact" placeholder="Почта или телефон" required>
-                                        <textarea name="messages" id="" cols="30" rows="7"
-                                                  placeholder="Напишите нам что-нибудь?"></textarea>
-                    <input type="submit" name="done" value="ОСТАВИТЬ ЗАЯВКУ">
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!--end modal-->
 <!-- poor panel -->
 <div class="poor_panel" id="poorPanel">
     <a href="#" id="imgControl">Вкл/выкл изображения</a>
@@ -54,7 +32,7 @@
     </a>
     <a id="normalVision" href="#">Обычная версия</a>
 </div>
-<div class="poor_btn black">
+<div class="poor_btn">
     <a id="poorVision" href="#">
         <i class="fa fa-eye" aria-hidden="true"></i>
     </a>
@@ -67,7 +45,7 @@
                 <div class="col-md-2 col-lg-3 top_logo background_white clearfix hidden-xs hidden-sm">
                     <div class="media">
                         <a class="media-left" href="index.html">
-                            <img src="img/header_logo.png" alt="logo" class="media-object img-responsive">
+                            <img src="img/header_logo.png" alt="logo" class="media-object img-responsive" alt="Логотип">
                         </a>
                         <div class="media-body">
                             <h2 class="media-heading">
@@ -79,7 +57,7 @@
                 <div class="col-md-7 col-lg-5 top_nav col-xs-12 col-sm-12 poor_full_width">
                     <ul class="list_inline" id="topNav">
                         <li><a href="about.html" class="up">О компании</a></li>
-                        <li><a href="catalog.html" class="up active">Каталог</a></li>
+                        <li class="active"><a href="catalog.html" class="up">Каталог</a></li>
                         <li><a href="news.html" class="up">Новости</a></li>
                         <li><a href="reviews.html" class="up">Отзывы</a></li>
                         <li><a href="gallery.html" class="up">Галерея</a></li>
@@ -93,8 +71,19 @@
                         <div class="col-md-6 top_contacts">
                             <h3>+7(812)123-45-67</h3>
                         </div>
-                        <div class="col-md-6 top_call">
-                            <a href="#callBackModal" data-toggle="modal" class="btn_base">Заявка</a>
+                        <div class="col-md-6 white_text header_cart">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-object">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                            <span>
+                                Ваша корзина пуста
+                            </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,11 +122,25 @@
     <!--end header-->
 </header>
 <main class="item_page">
-
-    <div class="container-fluid mobile_full_width">
+    <div class="breadcoumbs">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <div class="section_capt pd">
+                <ul class="breadcrumb text_gray">
+                    <li><i class="fa fa-home text_gray"></i></li>
+                    <li>Каталог</li>
+                    <li>Камины</li>
+                    <li>Каминная облицовка Elizaveta угловая</li>
+
+                </ul>
+                </div>
+            </div>
+            </div>
+        </div>
+    <div class="container-fluid mobile_full_width full_width">
+        <div class="row bord_bott">
+            <div class="col-md-12">
+                <div class="section_capt pd small_padd">
                     <h1>Каминная облицовка Elizaveta угловая</h1>
                     <a href="#" class="return"><i class="fa fa-angle-left"></i><span class="hidden-xs hidden-sm">Назад к каталогу</span></a>
                 </div>
@@ -210,7 +213,7 @@
                         </h2>
                     </div>
                     <div class="col-md-6 item_btn hidden-xs hidden-sm">
-                        <a class="btn_base" href="#">Оставить заявку</a>
+                        <a class="btn_circle btn_cart" href="#"><i class="fa fa-shopping-cart"></i>Купить</a>
                     </div>
                 </div>
                 <div class="row option">
@@ -268,11 +271,7 @@
                 <div class="col-xs-6"><span>1070 мм.</span></div>
                 <div class="col-xs-6"><span>Глубина:</span></div>
                 <div class="col-xs-6"><span>1220 мм.</span></div>
-                <div class="col-xs-12" style="margin-top: 50px;">
-                    <p>Облицовка Bella Italia (Польша) предназначена для декоративной отделки каминной топки.
-                        Облицовка изготовлена из песчаника и полированного мрамора Rayforest Braun (оттенки светло-коричневого с тёмными прожилками).
-                        Балка изготовлена из</p>
-                </div>
+
 </div>
             </div>
                 </div>
@@ -281,8 +280,102 @@
                     <a class="btn_base" href="#">Оставить заявку</a>
                 </div>
             </div>
+        <div class="row">
+            <div class="col-md-12 bottom_text"><p>Облицовка Bella Italia (Польша) предназначена для декоративной отделки каминной топки.
+                Облицовка изготовлена из песчаника и полированного мрамора Rayforest Braun (оттенки светло-коричневого с тёмными прожилками).
+                Балка изготовлена из</p></div>
+            <div class="col-md-12">
+                <div class="social_count">
+                    <div class="soc_count fb_count">
+                        <span><i class="sprite_count sprite_count-count_fb"></i></span>
+                        <span>12</span>
+                    </div>
+                    <div class="soc_count vk_count">
+                        <span><i class="sprite_count sprite_count-count_vk"></i></span>
+                        <span>78</span>
+                    </div>
+                    <div class="soc_count tw_count">
+                        <span><i class="sprite_count sprite_count-count_tw"></i></span>
+                        <span>89</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    <div class="goods">
+        <div class="container-fluid mobile_full_width full_width">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section_capt_center small_padd bord_capt">
+                        <h2>Похожие товары</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-3 goods_item col-sm-6 col-xs-12">
+                        <div class="goods_img">
+                            <img src="img/catalog_item_1.png" alt="item" class="img-responsive">
+                        </div>
+                        <div class="goods_title">
+                            <h3>Печь-камин Бавария</h3>
+                        </div>
+                        <div class="goods_price">
+                            <h2>
+                                22 000 <i class="fa fa-ruble"></i>
+                            </h2>
+                        </div>
+                        <div class="hidden_block">
+                            <a class="btn_circle btn_cart" href="#"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 goods_item col-xs-12 col-sm-6">
+                        <div class="goods_img">
+                            <img src="img/catalog_item_2.png" alt="item" class="img-responsive">
+                        </div>
+                        <div class="goods_title">
+                            <h3>Куппер ОК-30 </h3>
+                        </div>
+                        <div class="goods_price">
+                            <h2>17 500 <i class="fa fa-ruble"></i></h2>
+                        </div>
+                        <div class="hidden_block">
+                            <a class="btn_circle btn_cart" href="#"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 goods_item col-xs-12 col-sm-6">
+                        <div class="goods_img">
+                            <img src="img/catalog_item_3.png" alt="item" class="img-responsive">
+                        </div>
+                        <div class="goods_title">
+                            <h3>АОГТ-00 со стеклом</h3>
+                        </div>
+                        <div class="goods_price">
+                            <h2>38 000 <i class="fa fa-ruble"></i></h2>
+                        </div>
+                        <div class="hidden_block">
+                            <a class="btn_circle btn_cart" href="#"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 goods_item col-xs-12 col-sm-6">
+                        <div class="goods_img">
+                            <img src="img/catalog_item_4.png" alt="item" class="img-responsive">
+                        </div>
+                        <div class="goods_title">
+                            <h3>
+                                Куппер ОВК-18
+                            </h3>
+                        </div>
+                        <div class="goods_price">
+                            <h2>17 500 <i class="fa fa-ruble"></i></h2>
+                        </div>
+                        <div class="hidden_block">
+                            <a class="btn_circle btn_cart" href="#"><i class="fa fa-shopping-cart"></i>В корзину</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
 
 
 </main>

@@ -1,10 +1,14 @@
 @import "mixin";
 @import "varibles";
 @import "base";
+@import "sprite";
+@import "buttons";
 @import "poor_vision";
 @import "medium_size";
 @import "large_size";
+@import "breadcoumbs";
 @import "poor_contrast";
+@import "items";
 //header
 
 
@@ -33,6 +37,14 @@
         }
         .top_contacts {
           h3 {
+            color: @white;
+          }
+        }
+        .header_cart {
+          i {
+            color: @white;
+          }
+          span {
             color: @white;
           }
         }
@@ -94,9 +106,9 @@
             }
           }
           &.active {
-            .shadow(0 0 0 1px @color-base);
             a {
               color: @color-base;
+              .shadow(0 0 0 2px @color-base);
             }
           }
         }
@@ -125,10 +137,14 @@
     }
     .header_cart {
       padding-top: 15px;
+      i {
+        color: @black;
+      }
       .media-body {
         vertical-align: middle;
         span {
           font-size: 16px;
+          color: @black;
         }
       }
     }
@@ -505,7 +521,7 @@
         .hidden_block {
           opacity: 0;
           position: absolute;
-          bottom: -108px;
+          //bottom: -108px;
           margin-left: -1px;
           width: 100.6%;
           z-index: 100;
@@ -850,7 +866,6 @@
       }
       .bord_row {
         border: 1px solid @bord_color;
-        border-bottom: none;
       }
       .item_option {
         padding-top: 100px;
@@ -886,6 +901,16 @@
         .item_btn {
           padding: 0;
         }
+      }
+      .bottom_text {
+        padding: 0 5%;
+        margin-top: 50px;
+        p {
+          font-size: @baseFontSize + 2;
+        }
+      }
+      .social_count {
+        padding: 0 5%;
       }
       @media screen and (max-width: 991px) {
         #itemCarousel {

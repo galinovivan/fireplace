@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html class="normal">
+<head>
+    <meta charset="utf-8">
+    <title>
+        Товар
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sprite.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
+</head>
+<body>
+<!-- poor panel -->
+<div class="poor_panel" id="poorPanel">
+    <a href="#" id="imgControl">Вкл/выкл изображения</a>
+    <a href="#" class="contrast_btn" id="black"></a>
+    <a href="#" class="contrast_btn" id="blue"></a>
+    <a href="#" class="contrast_btn" id="white"></a>
+    <a href="#" class="resize_btn active" id="smallSize">
+        A
+    </a>
+    <a href="#" class="resize_btn" id="mediumSize">
+        A
+    </a>
+    <a href="#" class="resize_btn" id="largeSize">
+        A
+    </a>
+    <a id="normalVision" href="#">Обычная версия</a>
+</div>
+<div class="poor_btn">
+    <a id="poorVision" href="#">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+    </a>
+</div>
+<!-- // poor panel -->
+<header>
+    <div class="page_header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 col-lg-3 top_logo background_white clearfix hidden-xs hidden-sm">
+                    <div class="media">
+                        <a class="media-left" href="index.html">
+                            <img src="img/header_logo.png" alt="logo" class="media-object img-responsive" alt="Логотип">
+                        </a>
+                        <div class="media-body">
+                            <h2 class="media-heading">
+                                Каминпечь
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-lg-5 top_nav col-xs-12 col-sm-12 poor_full_width">
+                    <ul class="list_inline" id="topNav">
+                        <li><a href="about.html" class="up">О компании</a></li>
+                        <li class="active"><a href="catalog.html" class="up">Каталог</a></li>
+                        <li><a href="news.html" class="up">Новости</a></li>
+                        <li><a href="reviews.html" class="up">Отзывы</a></li>
+                        <li><a href="gallery.html" class="up">Галерея</a></li>
+                        <li><a href="contacts.html" class="up">Контакты</a></li>
+                        <li class="visible-xs visible-sm" id="navClose"><i class="fa fa-close"></i></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-1 hidden-xs hidden-sm poor_full_width">
+                    <div class="row">
+                        <div class="col-md-6 top_contacts">
+                            <h3>+7(812)123-45-67</h3>
+                        </div>
+                        <div class="col-md-6 white_text header_cart">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-object">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                            <span>
+                                Ваша корзина пуста
+                            </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header mobile-->
+    <div class="header_mobile visible-xs visible-sm">
+        <div class="container-fluid">
+            <div class="row clearfix">
+                <a id="navToggle" class="nav_mobile pull-left">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+
+                <div class="logo_mobile clearfix">
+
+
+                    <div class="brand pull-left">
+                        <a href="index.html"><img src="img/header_logo.png" alt="logo"></a>
+                    </div>
+                    <div class="brand_text pull-left">
+                        <h3 class="up">
+                            Каминпечь
+                        </h3>
+                    </div>
+                </div>
+                <div class="contact_mobile pull-right">
+                    <a href="#callBackModal" data-toggle="modal"><i class="fa fa-pencil"></i> </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--end header-->
+</header>
+
+
+<main class="catalog_list_page">
+    <div class="breadcoumbs">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="breadcrumb text_gray">
+                        <li><i class="fa fa-home text_gray"></i></li>
+                        <li>Каталог</li>
+                        <li>Камины</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="catalog_list">
+        <div class="container-fluid full_width">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="section_capt_center small_padd" style="padding-bottom: 30px;">
+                        <h2>Камины</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="sort_row background_gray clearfix">
+                        <ul class="pull-left list_inline sort">
+                            <li class="text_gray">Сортировать по:</li>
+                            <li><a href="#"class="text_gray active">Названию</a></li>
+                            <li><a href="#" class="text_gray">Цене</a></li>
+                        </ul>
+                        <ul class="pull-right list_inline views hidden-xs hidden-sm">
+                            <li><a href="catalog.html"><i class="sprite_views sprite_views-view_lg_gray"></i></a></li>
+                            <li><a href="#"><i class="sprite_views sprite_views-view_list_green"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shop_items_inline">
+            <div class="container-fluid full_width">
+                <div class="row shop_item">
+                    <div class="col-xs-3 item_thumb">
+                        <img src="img/item_list_1.jpg" alt="item" />
+                    </div>
+                    <div class="col-xs-3 item_title">
+                        <p class="medium">Печь-камин Бавария
+                            когда пилишь</p>
+                    </div>
+                    <div class="col-xs-3 item_price">
+                        <h3 class="light_text">22 000 <i class="fa fa-ruble"></i></h3>
+                    </div>
+                    <div class="col-xs-3">
+                        <a class="btn_circle btn_cart" href="#"><i class="fa fa-shopping-cart"></i>Заказать</a>
+                    </div>
+                </div>
+                <div class="row shop_item">
+                    <div class="col-xs-3 item_thumb">
+                        <img src="img/item_list_2.jpg" alt="item" />
+                    </div>
+                    <div class="col-xs-3 item_title">
+                        <p class="medium">Куппер ОК-30 </p>
+                    </div>
+                    <div class="col-xs-3 item_price">
+                        <h3 class="light_text">38 000 <i class="fa fa-ruble"></i></h3>
+                    </div>
+                    <div class="col-xs-3">
+                        <a class="btn_circle btn_cart"><i class="fa fa-shopping-cart"></i>Заказать</a>
+                    </div>
+                </div>
+                <div class="row shop_item">
+                    <div class="col-xs-3 item_thumb">
+                        <img src="img/item_prev_3.png" alt="item" />
+                    </div>
+                    <div class="col-xs-3 item_title">
+                        <p class="medium">АОГТ-00 со стеклом</p>
+                    </div>
+                    <div class="col-xs-3 item_price">
+                        <h3 class="light_text">17 500 <i class="fa fa-ruble"></i></h3>
+                    </div>
+                    <div class="col-xs-3">
+                        <a class="btn_circle btn_cart"><i class="fa fa-shopping-cart"></i>Заказать</a>
+                    </div>
+                </div>
+                <div class="row shop_item">
+                    <div class="col-xs-3 item_thumb">
+                        <img src="img/item_list_4.jpg" alt="item" />
+                    </div>
+                    <div class="col-xs-3 item_title">
+                        <p class="medium">АОГТ-00 со стеклом</p>
+                    </div>
+                    <div class="col-xs-3 item_price">
+                        <h3 class="light_text">17 500 <i class="fa fa-ruble"></i></h3>
+                    </div>
+                    <div class="col-xs-3">
+                        <a class="btn_circle btn_cart"><i class="fa fa-shopping-cart"></i>Заказать</a>
+                    </div>
+                </div>
+                <div class="row shop_item">
+                    <div class="col-xs-3 item_thumb">
+                        <img src="img/item_list_1.jpg" alt="item" />
+                    </div>
+                    <div class="col-xs-3 item_title">
+                        <p class="medium">Печь-камин Бавария</p>
+                    </div>
+                    <div class="col-xs-3 item_price">
+                        <h3 class="light_text">22 000 <i class="fa fa-ruble"></i></h3>
+                    </div>
+                    <div class="col-xs-3">
+                        <a class="btn_circle btn_cart"><i class="fa fa-shopping-cart"></i>Заказать</a>
+                    </div>
+                </div>
+                <div class="row shop_item">
+                    <div class="col-xs-3 item_thumb">
+                        <img src="img/item_list_2.jpg" alt="item" />
+                    </div>
+                    <div class="col-xs-3 item_title">
+                        <p class="medium">Куппер ОК-30</p>
+                    </div>
+                    <div class="col-xs-3 item_price">
+                        <h3 class="light_text">17 000<i class="fa fa-ruble"></i></h3>
+                    </div>
+                    <div class="col-xs-3">
+                        <a class="btn_circle btn_cart"><i class="fa fa-shopping-cart"></i>Заказать</a>
+                    </div>
+                </div>
+                <div class="row shop_item">
+                    <div class="col-xs-3 item_thumb">
+                        <img src="img/item_list_3.jpg" alt="item" />
+                    </div>
+                    <div class="col-xs-3 item_title">
+                        <p class="medium">АОГТ-00 со стеклом</p>
+                    </div>
+                    <div class="col-xs-3 item_price">
+                        <h3 class="light_text">17 500 <i class="fa fa-ruble"></i></h3>
+                    </div>
+                    <div class="col-xs-3">
+                        <a class="btn_circle btn_cart"><i class="fa fa-shopping-cart"></i>Заказать</a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="shop_more">
+                        <a href="#" class="btn_circle lg">Загрузить еще 12 товаров</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<div class="pre_footer"></div>
+<footer>
+    <div class="container-fluid">
+        <div class="row footer_logo hidden-xs hidden-sm">
+            <div class="col-md-12">
+                <div class="logo">
+                    <a href="index.html"><img src="img/header_logo.png" alt="logo" class="img-responsive"></a>
+                    <h2>Каминпечь</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row footer_info">
+            <div class="col-md-3 footer_copy hidden-xs hidden-sm">
+                <p>&copy; КаминПечь 2016</p>
+                <p>Все права защищены</p>
+            </div>
+            <div class="col-md-3 footer_contact col-xs-6">
+                <h3 class="hidden-xs hidden-sm">+7(812)123-45-67</h3>
+                <p>Санкт-Петербург, пр. Большевиков, 43</p>
+            </div>
+            <div class="col-md-3 umi_copy col-xs-6">
+                <p>Сайт создан бесплатно на UMI</p>
+                <p>Работает на UMI.CMS</p>
+            </div>
+            <div class="col-xs-6 visible-xs visible-sm footer_phone">
+                <h3>+7(812)123-45-67</h3>
+            </div>
+            <div class="col-md-3 footer_social hidden-xs hidden-sm">
+                <ul class="list_inline">
+                    <li>
+                        <a href="#"><i class="sprite-social sprite-social_fb"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="sprite-social sprite-social_vk"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="sprite-social sprite-social_tw"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="sprite-social sprite-social_inst"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="sprite-social sprite-social_odn"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="visible-xs visible-sm col-xs-12 footer_social">
+                <ul class="list_inline">
+                    <li><a href="#"><i class="sprite-social-mobile sprite-social_mobile_fb"></i></a></li>
+                    <li><a href="#"><i class="sprite-social-mobile sprite-social_mobile_vk"></i></a></li>
+                    <li><a href="#"><i class="sprite-social-mobile sprite-social_mobile_tw"></i></a></li>
+                    <li><a href="#"><i class="sprite-social-mobile sprite-social_mobile_inst"></i></a></li>
+                    <li><a href="#"><i class="sprite-social-mobile sprite-social_mobile_odn"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="js/script.js"></script>
+<script src="js/poor_vision.js"></script>

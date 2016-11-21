@@ -1,0 +1,40 @@
+// social count
+.social_count {
+  margin-top: 30px;
+  .soc_count {
+    width: 100px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 10px;
+    i {
+      display: inline-block;
+    }
+    .align();
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+    span {
+      height: 40px;
+      padding: 10px 0;
+      color: @white;
+      display: block;
+      float: left;
+      width: 50%;
+      &:first-of-type {
+        border-right: 1px solid #7489b6;
+      }
+    }
+    &.fb_count {
+      background: #3b5998;
+    }
+    &.vk_count {
+      background: #5b7fa6;
+    }
+    &.tw_count {
+      background: #57ccff;
+    }
+    .img_hover();
+  }
+}

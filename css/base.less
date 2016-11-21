@@ -220,6 +220,14 @@ button {
   h2 {
     font-size: @h2_larg;
   }
+  &.bord_capt {
+    border: 1px solid @bord_color;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 30px 0;
+    margin: 0 !important;
+  }
   @media screen and (max-width: 991px) {
     h2 {
       font-size: @h2_larg;
@@ -228,6 +236,9 @@ button {
 }
 .section_capt {
   position: relative;
+  &.small_padd {
+    margin-top: 0;
+  }
   @media screen and (min-width: 991px) {
     padding-right: 160px;
   }
@@ -238,7 +249,7 @@ button {
   }
   .return {
     position: absolute;
-    right: 0;
+    right: 5%;
     top: 10px;
     i {
       font-size: 25px;
@@ -266,7 +277,6 @@ button {
   .back_link {
     position: absolute;
     top: 40%;
-    right: 0;
     span {
       font-size: @baseFontSize + 6;
       color: @color-base;
@@ -356,6 +366,9 @@ button {
   &.medium {
     width: 250px !important;
   }
+  &.lg {
+    width: 320px !important;
+  }
 }
 
 .grid_5 {
@@ -397,6 +410,9 @@ button {
     .pagination_style();
     margin: 50px 0 0 0;
   }
+}
+.bord_bott {
+  border-bottom: 1px solid @bord_color;
 }
 @media screen and (max-width: 991px) {
   .pagination_container {
