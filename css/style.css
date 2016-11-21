@@ -784,6 +784,9 @@ button:focus {
     padding: 26px;
   }
 }
+.no_padd_right {
+  padding-right: 0 !important;
+}
 .sprite_count {
   background-image: url('../img/sprite_social_count.png');
   background-repeat: no-repeat;
@@ -1328,6 +1331,51 @@ html.poor_vision body input {
 }
 .catalog_page .goods .goods_item .hidden_block {
   padding-bottom: 0 !important;
+}
+.count {
+  width: 160px;
+  display: block;
+  margin: 0 auto;
+}
+.count span {
+  float: left;
+  border: 1px solid #ebebeb;
+  padding: 12px 0;
+  text-align: center;
+}
+.count .char {
+  cursor: pointer;
+  width: 45px;
+  height: 45px;
+}
+.count .result {
+  width: 70px;
+  height: 45px;
+}
+.item_cart_wrapper {
+  border: 1px solid #ebebeb;
+  margin-left: -1px;
+  padding: 50px 0 50px 0;
+}
+.item_cart_wrapper .item_cart {
+  position: relative;
+  text-align: center;
+}
+.item_cart_wrapper .item_cart .item_thumb img {
+  display: block;
+  margin: 0 auto;
+  height: auto;
+}
+.item_cart_wrapper .item_cart .item_title {
+  color: #f6891f;
+}
+.result_order {
+  padding: 65px 0;
+}
+.del_btn {
+  position: absolute;
+  top: 0;
+  right: 10%;
 }
 body .transparent_header .page_header {
   position: absolute;

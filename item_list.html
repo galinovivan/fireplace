@@ -12,28 +12,6 @@
     <script src="https://use.fontawesome.com/bf8c20532a.js"></script>
 </head>
 <body>
-<!--modal-->
-<div class="modal fade" id="callBackModal">
-    <div class="modal-dialog modal-md">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" data-dismiss="modal" aria-hidden="true" class="close" style="opacity: 1;"><img src="img/modal_close.png" alt="close"></button>
-                <h2 class="up modal-title">ЗАЯВКА</h2>
-
-            </div>
-            <div class="modal-body">
-                <form method="post" id="callBackForm">
-                    <input type="text" name="name" placeholder="Как вас зовут?" required>
-                    <input type="text" name="user_contact" placeholder="Почта или телефон" required>
-                                        <textarea name="messages" id="" cols="30" rows="7"
-                                                  placeholder="Напишите нам что-нибудь?"></textarea>
-                    <input type="submit" name="done" value="ОСТАВИТЬ ЗАЯВКУ">
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-<!--end modal-->
 <!-- poor panel -->
 <div class="poor_panel" id="poorPanel">
     <a href="#" id="imgControl">Вкл/выкл изображения</a>
@@ -51,7 +29,7 @@
     </a>
     <a id="normalVision" href="#">Обычная версия</a>
 </div>
-<div class="poor_btn black">
+<div class="poor_btn">
     <a id="poorVision" href="#">
         <i class="fa fa-eye" aria-hidden="true"></i>
     </a>
@@ -64,7 +42,7 @@
                 <div class="col-md-2 col-lg-3 top_logo background_white clearfix hidden-xs hidden-sm">
                     <div class="media">
                         <a class="media-left" href="index.html">
-                            <img src="img/header_logo.png" alt="logo" class="media-object img-responsive">
+                            <img src="img/header_logo.png" alt="logo" class="media-object img-responsive" alt="Логотип">
                         </a>
                         <div class="media-body">
                             <h2 class="media-heading">
@@ -76,7 +54,7 @@
                 <div class="col-md-7 col-lg-5 top_nav col-xs-12 col-sm-12 poor_full_width">
                     <ul class="list_inline" id="topNav">
                         <li><a href="about.html" class="up">О компании</a></li>
-                        <li><a href="catalog.html" class="up active">Каталог</a></li>
+                        <li class="active"><a href="catalog.html" class="up">Каталог</a></li>
                         <li><a href="news.html" class="up">Новости</a></li>
                         <li><a href="reviews.html" class="up">Отзывы</a></li>
                         <li><a href="gallery.html" class="up">Галерея</a></li>
@@ -90,8 +68,19 @@
                         <div class="col-md-6 top_contacts">
                             <h3>+7(812)123-45-67</h3>
                         </div>
-                        <div class="col-md-6 top_call">
-                            <a href="#callBackModal" data-toggle="modal" class="btn_base">Заявка</a>
+                        <div class="col-md-6 white_text header_cart">
+                            <div class="media">
+                                <div class="media-left">
+                                    <div class="media-object">
+                                        <i class="fa fa-shopping-cart"></i>
+                                    </div>
+                                </div>
+                                <div class="media-body">
+                            <span>
+                                Ваша корзина пуста
+                            </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
